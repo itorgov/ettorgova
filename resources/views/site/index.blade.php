@@ -14,43 +14,26 @@
         <div class="slider-cycle">
             <div class="slides displayblock">
                 <figure>
-                    <a href="#" title="Free Business WordPress Theme">
+                    <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
                         <img width="1440" height="500"
                              src="{{ asset('files/featured-img.jpg') }}"
                              class="pngfix wp-post-image"
-                             alt="Free Business WordPress Theme"
-                             title="Free Business WordPress Theme">
+                             alt='Юридическая компания "Торгова и партнёры"'
+                             title='Юридическая компания "Торгова и партнёры"'>
                     </a>
                 </figure>
-                <div class="container">
-                    <article class="featured-text">
-                        <h2 class="featured-title">
-                            <a href="#" title="Free Business WordPress Theme">Free Business WordPress Theme</a>
-                        </h2>
-
-                        <div class="featured-content">Free Responsive flat design business WordPress Theme.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed biben...
-                        </div>
-                    </article>
-                </div>
             </div>
-            <div class="slides displaynone">
-                <figure>
-                    <a href="#" title="Truly Responsive">
-                        <img width="1440" height="500" src="{{ asset('files/featured-img-41.jpg') }}"
-                             class="pngfix wp-post-image" alt="Truly Responsive" title="Truly Responsive">
-                    </a>
-                </figure>
-                <div class="container">
-                    <article class="featured-text">
-                        <h2 class="featured-title">
-                            <a href="#" title="Truly Responsive">Truly Responsive</a>
-                        </h2>
-
-                        <div class="featured-content">Build with love &#038; passion</div>
-                    </article>
-                </div>
-            </div>
+            {{--<div class="slides displaynone">--}}
+                {{--<figure>--}}
+                    {{--<a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>--}}
+                        {{--<img width="1440" height="500"--}}
+                             {{--src="{{ asset('files/featured-img-41.jpg') }}"--}}
+                             {{--class="pngfix wp-post-image"--}}
+                             {{--alt='Юридическая компания "Торгова и партнёры"'--}}
+                             {{--title='Юридическая компания "Торгова и партнёры"'>--}}
+                    {{--</a>--}}
+                {{--</figure>--}}
+            {{--</div>--}}
         </div>
         <nav id="controllers" class="clearfix">
         </nav>
@@ -66,8 +49,9 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-1.jpg') }}"
-                                         class="attachment-icon wp-post-image" alt="icon-1">
+                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                         class="attachment-icon wp-post-image"
+                                         alt="Юридическое консультирование">
                                 </div>
                                 <h3 class="service-title">Юридическое консультирование</h3>
                             </div>
@@ -84,8 +68,9 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-2.jpg') }}"
-                                         class="attachment-icon wp-post-image" alt="icon-2">
+                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                         class="attachment-icon wp-post-image"
+                                         alt="Регистрация предпринимателей">
                                 </div>
                                 <h3 class="service-title">Регистрация предпринимателей</h3>
                             </div>
@@ -105,8 +90,9 @@
                         <div class="one-fourth clearfix-half">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-3.jpg') }}"
-                                         class="attachment-icon wp-post-image" alt="icon-3">
+                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                         class="attachment-icon wp-post-image"
+                                         alt="Регистрация организаций">
                                 </div>
                                 <h3 class="service-title">Регистрация организаций</h3>
                             </div>
@@ -124,8 +110,9 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-4.jpg') }}"
-                                         class="attachment-icon wp-post-image" alt="icon-4">
+                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                         class="attachment-icon wp-post-image"
+                                         alt="Юридическое сопровождение бизнеса">
                                 </div>
                                 <h3 class="service-title">Юридическое сопровождение бизнеса</h3>
                             </div>
@@ -142,8 +129,9 @@
                         <div class="one-fourth clearfix-half clearfix-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-5.jpg') }}"
-                                         class="attachment-icon wp-post-image" alt="icon-5">
+                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                         class="attachment-icon wp-post-image"
+                                         alt="Услуги юриста в арбитраже">
                                 </div>
                                 <h3 class="service-title">Услуги юриста в арбитраже</h3>
                             </div>
@@ -160,8 +148,9 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-6.jpg') }}"
-                                         class="attachment-icon wp-post-image" alt="icon-6">
+                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                         class="attachment-icon wp-post-image"
+                                         alt="Представительство в суде">
                                 </div>
                                 <h3 class="service-title">Представительство в суде</h3>
                             </div>
@@ -179,7 +168,8 @@
                             <div class="service-item clearfix">
                                 <div class="service-icon">
                                     <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
-                                         class="attachment-icon wp-post-image" alt="icon-7">
+                                         class="attachment-icon wp-post-image"
+                                         alt="Составление/анализ документов">
                                 </div>
                                 <h3 class="service-title">Составление/анализ документов</h3>
                             </div>
@@ -195,8 +185,9 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-8.jpg') }}"
-                                         class="attachment-icon wp-post-image" alt="icon-8">
+                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                         class="attachment-icon wp-post-image"
+                                         alt="Сопровождение сделок с недвижимостью">
                                 </div>
                                 <h3 class="service-title">Сопровождение сделок с недвижимостью</h3>
                             </div>
@@ -215,7 +206,7 @@
                 </section>
                 <section id="interface_promobox_widget-3" class="widget widget_promotional_bar clearfix">
                     <div class="promotional-text">Только у нас антикризисная акция!
-                            <span>До 30.11.2015г. Представительство в судах всего 4.500 рублей по следующим направлениями:
+                            <span>До 25.12.2015г. Представительство в судах всего 4.500 рублей по следующим направлениями:
                                 <ul>
                                     <li>споры с банками;</li>
                                     <li>защита прав потребителей;</li>

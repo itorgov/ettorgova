@@ -99,10 +99,18 @@
                     </div>
                     <div class="social-profiles clearfix">
                         <ul>
-                            <li class="facebook"><a href="http://facebook.com/themehorse" title="Interface on Facebook"
-                                                    target="_blank"></a></li>
-                            <li class="twitter"><a href="http://twitter.com/theme_horse" title="Interface on Twitter"
-                                                   target="_blank"></a></li>
+                            <li class="facebook">
+                                <a href="#"
+                                   title="ЮК Торгова и партнёры в Facebook"
+                                   target="_blank">
+                                </a>
+                            </li>
+                            <li class="twitter">
+                                <a href="#"
+                                   title="ЮК Торгова и партнёры в Twitter"
+                                   target="_blank">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -297,20 +305,30 @@
                     <div class="social-profiles clearfix">
                         <ul>
                             <li class="facebook">
-                                <a href="http://facebook.com/themehorse" title="Interface on Facebook"
-                                   target="_blank"></a>
+                                <a href="#"
+                                   title="ЮК Торгова и партнёры в Facebook"
+                                   target="_blank">
+                                </a>
                             </li>
                             <li class="twitter">
-                                <a href="http://twitter.com/theme_horse" title="Interface on Twitter"
-                                   target="_blank"></a>
+                                <a href="#"
+                                   title="ЮК Торгова и партнёры в Twitter"
+                                   target="_blank">
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="copyright">Copyright &copy; 2015
-                        <a href="{{ route('site.index') }}" title="Interface">
+                    <div class="copyright">
+                        Copyright &copy;
+                        <a href="{{ route('site.index') }}"
+                           title='Юридическая компания "Торгова и партнёры"'>
                             <span>ЮК "Торгова и партнеры"</span>
-                        </a> | Дизайн компании
-                        <a href="http://themehorse.com" target="_blank" title="Theme Horse"><span>Theme Horse</span></a>
+                        </a> 2015 | Дизайн компании
+                        <a href="http://themehorse.com"
+                           target="_blank"
+                           title="Theme Horse">
+                            <span>Theme Horse</span>
+                        </a>
                     </div>
                 </div>
             </div>
