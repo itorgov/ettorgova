@@ -3,8 +3,8 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.styles([
         'fonts.css',
-        'responsive.css',
-        'style.css'
+        'style.css',
+        'responsive.css'
     ]);
     mix.scripts([
         'jquery.js',
