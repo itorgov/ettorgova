@@ -23,17 +23,17 @@
                     </a>
                 </figure>
             </div>
-            <div class="slides displaynone">
-                <figure>
-                    <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
-                        <img width="1440" height="500"
-                             src="{{ url(config('app.staticUrl') . '/files/featured-img-41.jpg') }}"
-                             class="pngfix wp-post-image"
-                             alt='Юридическая компания "Торгова и партнёры"'
-                             title='Юридическая компания "Торгова и партнёры"'>
-                    </a>
-                </figure>
-            </div>
+            {{--<div class="slides displaynone">--}}
+                {{--<figure>--}}
+                    {{--<a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>--}}
+                        {{--<img width="1440" height="500"--}}
+                             {{--src="{{ url(config('app.staticUrl') . '/files/featured-img-41.jpg') }}"--}}
+                             {{--class="pngfix wp-post-image"--}}
+                             {{--alt='Юридическая компания "Торгова и партнёры"'--}}
+                             {{--title='Юридическая компания "Торгова и партнёры"'>--}}
+                    {{--</a>--}}
+                {{--</figure>--}}
+            {{--</div>--}}
         </div>
         <nav id="controllers" class="clearfix">
         </nav>
