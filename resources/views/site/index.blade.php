@@ -16,24 +16,24 @@
                 <figure>
                     <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
                         <img width="1440" height="500"
-                             src="{{ asset('files/featured-img.jpg') }}"
+                             src="{{ url(config('app.staticUrl') . '/files/featured-img.jpg') }}"
                              class="pngfix wp-post-image"
                              alt='Юридическая компания "Торгова и партнёры"'
                              title='Юридическая компания "Торгова и партнёры"'>
                     </a>
                 </figure>
             </div>
-            {{--<div class="slides displaynone">--}}
-                {{--<figure>--}}
-                    {{--<a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>--}}
-                        {{--<img width="1440" height="500"--}}
-                             {{--src="{{ asset('files/featured-img-41.jpg') }}"--}}
-                             {{--class="pngfix wp-post-image"--}}
-                             {{--alt='Юридическая компания "Торгова и партнёры"'--}}
-                             {{--title='Юридическая компания "Торгова и партнёры"'>--}}
-                    {{--</a>--}}
-                {{--</figure>--}}
-            {{--</div>--}}
+            <div class="slides displaynone">
+                <figure>
+                    <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
+                        <img width="1440" height="500"
+                             src="{{ url(config('app.staticUrl') . '/files/featured-img-41.jpg') }}"
+                             class="pngfix wp-post-image"
+                             alt='Юридическая компания "Торгова и партнёры"'
+                             title='Юридическая компания "Торгова и партнёры"'>
+                    </a>
+                </figure>
+            </div>
         </div>
         <nav id="controllers" class="clearfix">
         </nav>
@@ -49,7 +49,8 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                    <img width="100" height="100"
+                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
                                          class="attachment-icon wp-post-image"
                                          alt="Юридическое консультирование">
                                 </div>
@@ -68,7 +69,8 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                    <img width="100" height="100"
+                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
                                          class="attachment-icon wp-post-image"
                                          alt="Регистрация предпринимателей">
                                 </div>
@@ -90,7 +92,8 @@
                         <div class="one-fourth clearfix-half">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                    <img width="100" height="100"
+                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
                                          class="attachment-icon wp-post-image"
                                          alt="Регистрация организаций">
                                 </div>
@@ -110,7 +113,8 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                    <img width="100" height="100"
+                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
                                          class="attachment-icon wp-post-image"
                                          alt="Юридическое сопровождение бизнеса">
                                 </div>
@@ -129,7 +133,8 @@
                         <div class="one-fourth clearfix-half clearfix-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                    <img width="100" height="100"
+                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
                                          class="attachment-icon wp-post-image"
                                          alt="Услуги юриста в арбитраже">
                                 </div>
@@ -148,7 +153,8 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                    <img width="100" height="100"
+                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
                                          class="attachment-icon wp-post-image"
                                          alt="Представительство в суде">
                                 </div>
@@ -167,7 +173,8 @@
                         <div class="one-fourth clearfix-half">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                    <img width="100" height="100"
+                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
                                          class="attachment-icon wp-post-image"
                                          alt="Составление/анализ документов">
                                 </div>
@@ -185,7 +192,8 @@
                         <div class="one-fourth">
                             <div class="service-item clearfix">
                                 <div class="service-icon">
-                                    <img width="100" height="100" src="{{ asset('files/icon-7.jpg') }}"
+                                    <img width="100" height="100"
+                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
                                          class="attachment-icon wp-post-image"
                                          alt="Сопровождение сделок с недвижимостью">
                                 </div>
@@ -234,7 +242,7 @@
                         <div class="one-fourth">
                             <a title="Выигранные суды" href="#">
                                 <img width="474" height="342"
-                                     src="{{ asset('files/tumblr_myebwtELvb1st5lhmo1_1280-474x342.jpg') }}"
+                                     src="{{ url(config('app.staticUrl') . '/files/tumblr_myebwtELvb1st5lhmo1_1280-474x342.jpg') }}"
                                      class="attachment-gallery wp-post-image"
                                      alt="Выигранные суды">
                             </a>
@@ -251,7 +259,7 @@
                         <div class="one-fourth clearfix-half">
                             <a title="Новое в российском законодательстве" href="#">
                                 <img width="474" height="342"
-                                     src="{{ asset('files/diary-474x342.jpg') }}"
+                                     src="{{ url(config('app.staticUrl') . '/files/diary-474x342.jpg') }}"
                                      class="attachment-gallery wp-post-image"
                                      alt="Новое в российском законодательстве">
                             </a>
@@ -268,7 +276,7 @@
                         <div class="one-fourth">
                             <a title="Задать вопрос нашему юристу" href="#">
                                 <img width="474" height="342"
-                                     src="{{ asset('files/business-break-474x342.jpg') }}"
+                                     src="{{ url(config('app.staticUrl') . '/files/business-break-474x342.jpg') }}"
                                      class="attachment-gallery wp-post-image"
                                      alt="Задать вопрос нашему юристу">
                             </a>

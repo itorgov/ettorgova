@@ -26,7 +26,8 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => env('APP_URL', 'http://ettorgova.ru'),
+    'staticUrl' => env('APP_STATIC_URL', 'http://static.ettorgova.ru'),
 
     /*
     |--------------------------------------------------------------------------
