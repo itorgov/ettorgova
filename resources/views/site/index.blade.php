@@ -24,15 +24,15 @@
                 </figure>
             </div>
             {{--<div class="slides displaynone">--}}
-                {{--<figure>--}}
-                    {{--<a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>--}}
-                        {{--<img width="1440" height="500"--}}
-                             {{--src="{{ url(config('app.staticUrl') . '/files/featured-img-41.jpg') }}"--}}
-                             {{--class="pngfix wp-post-image"--}}
-                             {{--alt='Юридическая компания "Торгова и партнёры"'--}}
-                             {{--title='Юридическая компания "Торгова и партнёры"'>--}}
-                    {{--</a>--}}
-                {{--</figure>--}}
+            {{--<figure>--}}
+            {{--<a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>--}}
+            {{--<img width="1440" height="500"--}}
+            {{--src="{{ url(config('app.staticUrl') . '/files/featured-img-41.jpg') }}"--}}
+            {{--class="pngfix wp-post-image"--}}
+            {{--alt='Юридическая компания "Торгова и партнёры"'--}}
+            {{--title='Юридическая компания "Торгова и партнёры"'>--}}
+            {{--</a>--}}
+            {{--</figure>--}}
             {{--</div>--}}
         </div>
         <nav id="controllers" class="clearfix">
@@ -44,7 +44,17 @@
     <div id="main">
         <div class="container clearfix">
             <div id="content">
-                <section id="interface_service_widget-2" class="widget widget_service">
+                <section class="widget widget_promotional_bar clearfix">
+                    <div class="promotional-text" style="width: 100%">Уважаемые посетители сайта юридической компании "Торгова и партнёры".
+                        <span>
+                            В настоящий момент наш сайт работает в демонстрационном режиме. Над ним сейчас ведётся активная
+                            работа и именно поэтому материалов на сайте в данный момент так мало. По всем интересующим
+                            Вас вопросам просим звонить по телефонам, указанным вверху или внизу страницы. Так же можно
+                            написать нам на электронную почту, указанную там же.
+                        </span>
+                    </div>
+                </section>
+                <section class="widget widget_service">
                     <div class="column clearfix">
                         <div class="one-fourth">
                             <div class="service-item clearfix">
@@ -212,7 +222,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="interface_promobox_widget-3" class="widget widget_promotional_bar clearfix">
+                <section class="widget widget_promotional_bar clearfix">
                     <div class="promotional-text">Только у нас антикризисная акция!
                             <span>До 25.12.2015г. Представительство в судах всего 4.500 рублей по следующим направлениями:
                                 <ul>
@@ -228,7 +238,7 @@
                     <a class="call-to-action" href="http://themehorse.com/theme-instruction/interface"
                        title="Подробнее">Подробнее</a>
                 </section>
-                <section id="interface_recent_work_widget-2" class="widget widget_recent_work">
+                <section class="widget widget_recent_work">
                     <div class="column clearfix">
                         <div class="one-fourth">
                             <h2 class="widget-title">Статьи, которые мы пишем</h2>
@@ -237,7 +247,7 @@
                                 строчек)</p>
                             <a class="call-to-action" href="http://themehorse.com/themes" title="View Themes">
                                 Узнать подробнее
-                            </a> <!-- .call-to-action -->
+                            </a>
                         </div>
                         <div class="one-fourth">
                             <a title="Выигранные суды" href="#">
@@ -255,7 +265,6 @@
                                 Описание нашей судебной практики и обзор выигранных нами дел.
                             </p>
                         </div>
-                        <!-- .one-fourth -->
                         <div class="one-fourth clearfix-half">
                             <a title="Новое в российском законодательстве" href="#">
                                 <img width="474" height="342"
@@ -272,7 +281,6 @@
                                 Обзоры наиболее важных и интересных документов.
                             </p>
                         </div>
-                        <!-- .one-fourth -->
                         <div class="one-fourth">
                             <a title="Задать вопрос нашему юристу" href="#">
                                 <img width="474" height="342"
@@ -289,64 +297,9 @@
                                 Задавайте нам вопросы, не стесняйтесь!
                             </p>
                         </div>
-                        <!-- .one-fourth -->
                     </div>
                 </section>
-                <!-- Что говорят клиенты о нас?
-                    <section id="interface_testimonial-2" class="widget widget_testimonial">
-                        <h2 class="widget-title">Что говорят клиенты о нас?</h2>
-
-                        <div class="column clearfix">
-                            <div class="one-half">
-                                <div class="testimonial-image"><img src="{{ asset('files/client.jpg') }}"
-                                                                    title="Guenter Weber" alt="Guenter Weber"></div>
-                                <div class="testimonial-content">
-                                    <p>
-                                        Clean, professional appearance, responsive design, all the admin options easy to
-                                        understand and implement - hard to make a mistake with a theme this thoroughly
-                                        thought out and well-organized.
-                                    </p>
-
-                                    <div class="testimonial-meta"><strong>Guenter Weber</strong> WordPress Lover - <a
-                                                href="#" title="ABC Inc" target="_blank"> ABC Inc</a></div>
-                                </div>
-                            </div>
-                            <div class="one-half">
-                                <div class="testimonial-image"><img src="{{ asset('files/client-2.jpg') }}"
-                                                                    title="Katre Tattar" alt="Katre Tattar"></div>
-                                <div class="testimonial-content">
-                                    <p>
-                                        Clean, professional appearance, responsive design, all the admin options easy to
-                                        understand and implement - hard to make a mistake with a theme this thoroughly
-                                        thought out and well-organized.
-                                    </p>
-
-                                    <div class="testimonial-meta"><strong>Katre Tattar</strong> WordPress Lover - <a
-                                                href="#" title="ABC Inc" target="_blank"> ABC Inc</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    -->
             </div>
         </div>
     </div>
-
-    <!-- Логотипы клиентов.
-        <div id="interface_featured_image_widget-3" class="widget widget_ourclients">
-            <div class="container">
-                <ul>
-                    <li><a href="http://wordpress.org" title="featured logo" target="_blank">
-                            <img src="{{ asset('files/wordpress1.png') }}" alt="featured logo">
-                        </a></li>
-                    <li><a href="http://jquery.com/" title="featured logo" target="_blank">
-                            <img src="{{ asset('files/jquery1.png') }}" alt="featured logo">
-                        </a></li>
-                    <li><a href="http://bbpress.org" title="featured logo" target="_blank">
-                            <img src="{{ asset('files/bbpress1.png') }}" alt="featured logo">
-                        </a></li>
-                </ul>
-            </div>
-        </div>
-        -->
 @endsection
