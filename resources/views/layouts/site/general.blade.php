@@ -123,8 +123,8 @@
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                     <a href="#">Полезная информация</a>
                                 </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#">Контакты</a>
+                                <li class="{{ explode('/', Route::getCurrentRoute()->getUri())[0] == 'kontakty' ? 'current-menu-item' : '' }}">
+                                    <a href="{{ route('kontakty') }}">Контакты</a>
                                 </li>
                             </ul>
                         </nav>

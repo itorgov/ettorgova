@@ -4,6 +4,10 @@ Route::get('', [
     'as' => 'site.index',
     'uses' => 'SiteController@index'
 ]);
+Route::get('kontakty', [
+    'as' => 'kontakty',
+    'uses' => 'SiteController@kontakty'
+]);
 Route::get('uslugi', [
     'as' => 'uslugi',
     'uses' => 'SiteController@services'
