@@ -154,24 +154,20 @@
 
                                 <div class="menu-secondary-menu-container">
                                     <ul id="menu-secondary-menu" class="menu">
-                                        <li id="menu-item-162"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-162">
-                                            <a href="{{ route('site.index') }}">Главная страница</a></li>
-                                        <li id="menu-item-165"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-165">
+                                        <li>
+                                            <a href="{{ route('site.index') }}">Главная страница</a>
+                                        </li>
+                                        <li>
                                             <a href="{{ route('uslugi') }}">Услуги</a>
                                         </li>
-                                        <li id="menu-item-166"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166">
+                                        <li>
                                             <a href="#">Акции</a>
                                         </li>
-                                        <li id="menu-item-166"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166">
+                                        <li>
                                             <a href="#">Полезная информация</a>
                                         </li>
-                                        <li id="menu-item-166"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166">
-                                            <a href="#">Контакты</a>
+                                        <li>
+                                            <a href="{{ route('kontakty') }}">Контакты</a>
                                         </li>
                                     </ul>
                                 </div>
