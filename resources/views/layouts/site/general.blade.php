@@ -23,7 +23,7 @@
                     <div class="info clearfix">
                         <ul>
                             <li class="phone-number">
-                                <a title="Нажмите, чтобы позвонить нам." href="tel:2889128">288-91-28</a>
+                                <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">288-91-28</a>
                             </li>
                             <li class="email">
                                 <a title="Нажмите, чтобы написать нам."
@@ -202,8 +202,12 @@
                                         Революции)
                                     </p>
 
-                                    <p>Телефон: 8 (831) 288-91-28<br>
-                                        Мобильный телефон: +7 (999) 079-078-1<br>
+                                    <p>Телефон: <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">
+                                            8 (831) 288-91-28</a>
+                                        <br>
+                                        Мобильный телефон: <a title="Нажмите, чтобы позвонить нам." href="tel:+79990790781">
+                                            +7 (999) 079-078-1</a>
+                                        <br>
                                         Email: <a href="mailto:jurist@ettorgova.ru"
                                                   title="Написать нам">jurist@ettorgova.ru</a><br>
                                         Сайт: <a href="{{ route('site.index') }}" target="_blank"
@@ -219,7 +223,7 @@
                     <div class="info clearfix">
                         <ul>
                             <li class="phone-number">
-                                <a title="Нажмите, чтобы позвонить нам." href="tel:2889128">288-91-28</a>
+                                <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">288-91-28</a>
                             </li>
                             <li class="email">
                                 <a title="Нажмите, чтобы написать нам."
