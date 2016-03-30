@@ -30,8 +30,8 @@
                                    href="mailto:jurist@ettorgova.ru">jurist@ettorgova.ru</a>
                             </li>
                             <li class="address">
-                                <a title="Нажмите, чтобы посмотреть на карте 2gis."
-                                   href="http://2gis.ru/n_novgorod/firm/70000001020079197/center/43.920625%2C56.279145/tab/firms/zoom/17"
+                                <a title="Нажмите, чтобы посмотреть на карте от Яндекс."
+                                   href="https://yandex.ru/maps/-/CVHsFSmB"
                                    target="_blank">
                                     Нижний Новгород, проспект Ленина, 51 (с.м. Двигатель Революции)
                                 </a>
@@ -230,8 +230,8 @@
                                    href="mailto:jurist@ettorgova.ru">jurist@ettorgova.ru</a>
                             </li>
                             <li class="address">
-                                <a title="Нажмите, чтобы посмотреть на карте 2gis."
-                                   href="http://2gis.ru/n_novgorod/firm/70000001020079197/center/43.920625%2C56.279145/tab/firms/zoom/17"
+                                <a title="Нажмите, чтобы посмотреть на карте от Яндекс."
+                                   href="https://yandex.ru/maps/-/CVHsFSmB"
                                    target="_blank">
                                     Нижний Новгород, проспект Ленина, 51 (с.м. Двигатель Революции)
                                 </a>
