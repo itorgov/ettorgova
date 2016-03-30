@@ -2,6 +2,11 @@
 
 @section('title', 'Контакты')
 
+@section('js')
+    @parent
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3tv74VP_LS9oBz-KnRdKrwAyXNn4qCAo&width=100%&height=450&lang=ru_RU&sourceType=constructor&id=map"></script>
+@endsection
+
 @section('header')
     <div class="page-title-wrap">
         <div class="container clearfix">
@@ -33,9 +38,7 @@
                     </div>
                 </section>
                 <section>
-                    <div class="column">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.9364627877158!2d43.92021531571865!3d56.27914595874133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414e2a6fee97841f%3A0x974a0c26c216f399!2z0K7RgNC40LTQuNGH0LXRgdC60LDRjyDQutC-0LzQv9Cw0L3QuNGPICLQotC-0YDQs9C-0LLQsCDQuCDQv9Cw0YDRgtC90ZHRgNGLIg!5e0!3m2!1sru!2sru!4v1450730770585" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                    <div class="column" id="map"></div>
                 </section>
             </div>
         </div>
