@@ -253,16 +253,15 @@
 
                             <p>Последняя написанная статья (здесь будет указано название статьи и несколько
                                 строчек)</p>
-                            <a class="call-to-action" href="http://themehorse.com/themes" title="View Themes">
+                            <a class="call-to-action" href="#" title="Узнать подробнее">
                                 Узнать подробнее
                             </a>
                         </div>
                         <div class="one-fourth">
-                            <a title="Выигранные суды" href="#">
+                            <a title="Выигранные суды (судебная практика)" href="#">
                                 <img width="474" height="342"
-                                     src="{{ url(config('app.staticUrl') . '/files/tumblr_myebwtELvb1st5lhmo1_1280-474x342.jpg') }}"
-                                     class="attachment-gallery wp-post-image"
-                                     alt="Выигранные суды">
+                                     src="{{ url(config('app.staticUrl') . '/files/vyigrannye-sudy-sudebnaya-praktika.png') }}"
+                                     alt="Судебная практика">
                             </a>
 
                             <h3 class="custom-gallery-title">
@@ -276,8 +275,7 @@
                         <div class="one-fourth clearfix-half">
                             <a title="Новое в российском законодательстве" href="#">
                                 <img width="474" height="342"
-                                     src="{{ url(config('app.staticUrl') . '/files/diary-474x342.jpg') }}"
-                                     class="attachment-gallery wp-post-image"
+                                     src="{{ url(config('app.staticUrl') . '/files/novoe-v-rossijskom-zakonodatelstve.png') }}"
                                      alt="Новое в российском законодательстве">
                             </a>
 
@@ -292,9 +290,8 @@
                         <div class="one-fourth">
                             <a title="Задать вопрос нашему юристу" href="#">
                                 <img width="474" height="342"
-                                     src="{{ url(config('app.staticUrl') . '/files/business-break-474x342.jpg') }}"
-                                     class="attachment-gallery wp-post-image"
-                                     alt="Задать вопрос нашему юристу">
+                                     src="{{ url(config('app.staticUrl') . '/files/zadat-vopros-yuristu.png') }}"
+                                     alt="Задать вопрос юристу">
                             </a>
 
                             <h3 class="custom-gallery-title">

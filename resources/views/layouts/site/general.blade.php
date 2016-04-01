@@ -32,7 +32,8 @@
                             <li class="address">
                                 <a title="Нажмите, чтобы посмотреть на карте от Яндекс."
                                    href="https://yandex.ru/maps/-/CVHsFSmB"
-                                   target="_blank">
+                                   target="_blank"
+                                   rel="nofollow">
                                     Нижний Новгород, проспект Ленина, 51 (с.м. Двигатель Революции)
                                 </a>
                             </li>
@@ -41,13 +42,13 @@
                     <div class="social-profiles clearfix">
                         <ul>
                             <li class="facebook">
-                                <a href="#"
-                                   title="ЮК Торгова и партнёры в Facebook"
+                                <a href="https://vk.com/ettorgova"
+                                   title="ЮК Торгова и партнёры в VK"
                                    target="_blank">
                                 </a>
                             </li>
                             <li class="twitter">
-                                <a href="#"
+                                <a href="https://twitter.com/ettorgova"
                                    title="ЮК Торгова и партнёры в Twitter"
                                    target="_blank">
                                 </a>
@@ -232,7 +233,8 @@
                             <li class="address">
                                 <a title="Нажмите, чтобы посмотреть на карте от Яндекс."
                                    href="https://yandex.ru/maps/-/CVHsFSmB"
-                                   target="_blank">
+                                   target="_blank"
+                                   rel="nofollow">
                                     Нижний Новгород, проспект Ленина, 51 (с.м. Двигатель Революции)
                                 </a>
                             </li>
@@ -246,13 +248,13 @@
                     <div class="social-profiles clearfix">
                         <ul>
                             <li class="facebook">
-                                <a href="#"
-                                   title="ЮК Торгова и партнёры в Facebook"
+                                <a href="https://vk.com/ettorgova"
+                                   title="ЮК Торгова и партнёры в VK"
                                    target="_blank">
                                 </a>
                             </li>
                             <li class="twitter">
-                                <a href="#"
+                                <a href="https://twitter.com/ettorgova"
                                    title="ЮК Торгова и партнёры в Twitter"
                                    target="_blank">
                                 </a>
@@ -261,15 +263,15 @@
                     </div>
                     <div class="copyright">
                         Copyright &copy;
-                        <a href="{{ route('site.index') }}"
-                           title='Юридическая компания "Торгова и партнёры"'>
+                        <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
                             <span>ЮК "Торгова и партнеры"</span>
-                        </a> 2015 | Дизайн компании
-                        <a href="http://themehorse.com"
-                           target="_blank"
-                           title="Theme Horse">
-                            <span>Theme Horse</span>
-                        </a>
+                        </a> 2015 - 2016
+                        <!--noindex-->
+                            | Дизайн компании
+                            <a href="http://themehorse.com" target="_blank" title="Дизайн компании Theme Horse" rel="nofollow">
+                                <span>Theme Horse</span>
+                            </a>
+                        <!--/noindex-->
                     </div>
                 </div>
             </div>
