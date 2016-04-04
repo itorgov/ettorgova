@@ -23,17 +23,17 @@
                     </a>
                 </figure>
             </div>
-            <div class="slides displaynone">
-                <figure>
-                    <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
-                        <img width="1440" height="500"
-                             src="{{ url(config('app.staticUrl') . '/files/featured-img-41.jpg') }}"
-                             class="pngfix wp-post-image"
-                             alt='Юридическая компания "Торгова и партнёры"'
-                             title='Юридическая компания "Торгова и партнёры"'>
-                    </a>
-                </figure>
-            </div>
+            {{--<div class="slides displaynone">--}}
+            {{--<figure>--}}
+            {{--<a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>--}}
+            {{--<img width="1440" height="500"--}}
+            {{--src="{{ url(config('app.staticUrl') . '/files/featured-img-41.jpg') }}"--}}
+            {{--class="pngfix wp-post-image"--}}
+            {{--alt='Юридическая компания "Торгова и партнёры"'--}}
+            {{--title='Юридическая компания "Торгова и партнёры"'>--}}
+            {{--</a>--}}
+            {{--</figure>--}}
+            {{--</div>--}}
         </div>
         <nav id="controllers" class="clearfix">
         </nav>
@@ -44,7 +44,17 @@
     <div id="main">
         <div class="container clearfix">
             <div id="content">
-                <section id="interface_service_widget-2" class="widget widget_service">
+                <section class="widget widget_promotional_bar clearfix">
+                    <div class="promotional-text" style="width: 100%">Уважаемые посетители сайта юридической компании "Торгова и партнёры".
+                        <span>
+                            В настоящий момент наш сайт работает в демонстрационном режиме. Над ним сейчас ведётся
+                            работа и именно поэтому материалов на сайте в данный момент так мало. По всем интересующим
+                            Вас вопросам просим звонить по телефонам, указанным вверху или внизу страницы. Так же можно
+                            написать нам на электронную почту, указанную там же.
+                        </span>
+                    </div>
+                </section>
+                <section class="widget widget_service">
                     <div class="column clearfix">
                         <div class="one-fourth">
                             <div class="service-item clearfix">
@@ -58,9 +68,10 @@
                             </div>
                             <article>
                                 <p>
-                                    Устные, письменные, выездные консультации с тщательным разбором любых вопросов.
-                                    В случае последующего заключения договора для решения рассматриваемого вопроса
-                                    консультация входит в стоимость услуг.
+                                    Устные, письменные, выездные консультации с тщательным анализом и подбором оптимальных
+                                    вариантов решения любых вопросов. В услуги компании так же входит участие в переговорах
+                                    с контрагентами. В случае последующего заключения договора на юридическое сопровождение
+                                    клиента по данному вопросу консультация входит в стоимость услуги.
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
@@ -78,12 +89,10 @@
                             </div>
                             <article>
                                 <p>
-                                    Полное и частичное сопровождение процесса регистрации гражданина в качестве ИП,
-                                    содействие в
-                                    подборе видом деятельности регистрируемого ИП, содействие в выборе систем
-                                    налогообложения, подготовку необходимого пакета документов, который необходим
-                                    для регистрации в качестве индивидуального предпринимателя, сопровождение к
-                                    нотариусу и ИФНС.
+                                    Полное или частичное сопровождение процесса регистрации гражданина в качестве ИП,
+                                    содействие в подборе видов деятельности регистрируемого ИП, содействие в выборе систем
+                                    налогообложения, подготовка пакета документов для государственной регистрации,
+                                    сопровождение к нотариусу и в ИФНС, консультирование на первых этапах работы в качестве ИП.
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
@@ -101,10 +110,10 @@
                             </div>
                             <article>
                                 <p>
-                                    Полное и частичное сопровождение процесса регистрации организации, содействие в
-                                    подборе видом действительности регистрируемой организации, содействие в выборе
-                                    системы налогообложения, подготовка необходимых документов, сопровождение к
-                                    нотариусу и ИФНС, консультирование на всех этапах.
+                                    Полное или частичное сопровождение процесса регистрации организации, содействие в подборе
+                                    видов действительности регистрируемой организации, содействие в выборе системы
+                                    налогообложения, подготовка пакета документов для государственной регистрации, сопровождение
+                                    к нотариусу и в ИФНС, консультирование на всех этапах регистрации.
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
@@ -122,9 +131,10 @@
                             </div>
                             <article>
                                 <p>
-                                    Полное и частичное юридическое сопровождение бизнеса. Наша компания предлагает
+                                    Полное или частичное юридическое сопровождение бизнеса. Наша компания предлагает
                                     консультационное абонентское обслуживание, частичное абонентское обслуживание
-                                    (анализ и подготовка документов), полное юридическое сопровождение бизнеса.
+                                    (анализ и подготовка документов), полное юридическое сопровождение бизнеса
+                                    (от консультирования до представительства интересов клиента в суде).
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
@@ -142,9 +152,11 @@
                             </div>
                             <article>
                                 <p>
-                                    Юридическое сопровождение на всех этапах разрешения сложившейся ситуации. От
-                                    внесудебного урегулирования вопроса, до представления интересов в суде
-                                    кассационной/надзорной инстанции.
+                                    Юридическое сопровождение клиента на всех этапах разрешения сложившейся ситуации.
+                                    От внесудебного урегулирования вопроса (претензионная работа), до представления
+                                    интересов в суде первой/апелляционной/кассационной/надзорной инстанции. При заключение
+                                    договора на представительство интересов в суде претензионная работа включается в
+                                    стоимость оказываемой услуги.
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
@@ -162,9 +174,10 @@
                             </div>
                             <article>
                                 <p>
-                                    Юридическое сопровождение дела на всех этапах рассмотрения спора по существу.
-                                    При необходимости оспаривания вынесенного судебного акта (дело рассматривалось с
-                                    участием наших сотрудников) скидка 20%.
+                                    Юридическое сопровождение клиента на всех этапах разрешения вопроса. При
+                                    необходимости в услугу включается внесудебное урегулирование вопроса (претензионная работа).
+                                    В случае оспаривания вынесенного судебного акта (дело рассматривалось с участием наших
+                                    сотрудников) клиенту предоставляется скидка в размере 20% на каждую из вышестоящих инстанций.
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
@@ -182,8 +195,11 @@
                             </div>
                             <article>
                                 <p>
-                                    Подготовка претензия, писем, заявлений, исковых заявлений, жалоб, ходатайств,
-                                    протоколов разногласий, договоров.
+                                    Подготовка претензий, заявлений, исковых заявлений, жалоб, ходатайств, протоколов
+                                    разногласий, договоров. При дальнейшем сопровождении клиента стоимость уже оказанной
+                                    услуги вычитается из последующей. Анализ документов и составление письменного
+                                    развернутого юридического заключения по представленным материалам с предложением
+                                    вариантов решения вопроса.
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
@@ -201,10 +217,11 @@
                             </div>
                             <article>
                                 <p>
-                                    Анализ пакета документов для проведения сделок, проверка прав третьих лиц на
-                                    приобретаемое имуществом, сопровождение процесса оформления прав на
-                                    приобретаемое имущество, участие в процессе приватизации, представление
-                                    интересов в госорганах при согласовании переустройства/перепланировки.
+                                    Анализ предмета сделки, мониторинг рынка, сбор необходимых документов, проверка прав
+                                    третьих лиц на приобретаемое имущество, проверка "репутации" продавца (по долевому
+                                    участию в строительстве), сопровождение процесса оформления прав на приобретаемое
+                                    имущество, участие в процессе приватизации, представление интересов в гос. органах
+                                    при согласовании переустройства/перепланировки.
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
@@ -212,15 +229,16 @@
                         </div>
                     </div>
                 </section>
-                <section id="interface_promobox_widget-3" class="widget widget_promotional_bar clearfix">
+                <section class="widget widget_promotional_bar clearfix">
                     <div class="promotional-text">Только у нас антикризисная акция!
-                            <span>До 25.12.2015г. Представительство в судах всего 4.500 рублей по следующим направлениями:
+                            <span>До 1 мая 2016 года представительство в судах всего 4000 рублей по следующим направлениями:
                                 <ul>
-                                    <li>споры с банками;</li>
                                     <li>защита прав потребителей;</li>
                                     <li>семейные споры;</li>
-                                    <li>возмещение ущерба в результате пролива;</li>
-                                    <li>трудовые споры</li>
+                                    <li>взыскание задолженности;</li>
+                                    <li>возмещение ущерба;</li>
+                                    <li>взыскание страхового возмещения;</li>
+                                    <li>трудовые споры.</li>
                                 </ul>
                                 А также производим регистрацию ООО или ИП бесплатно (оплачивается только госпошлина за регистрацию в ИФНС) при одновременном заключении договора на юридическое обслуживание по любому тарифу в ЮК "Торгова и партнеры".
                             </span>
@@ -228,23 +246,22 @@
                     <a class="call-to-action" href="http://themehorse.com/theme-instruction/interface"
                        title="Подробнее">Подробнее</a>
                 </section>
-                <section id="interface_recent_work_widget-2" class="widget widget_recent_work">
+                <section class="widget widget_recent_work">
                     <div class="column clearfix">
                         <div class="one-fourth">
                             <h2 class="widget-title">Статьи, которые мы пишем</h2>
 
                             <p>Последняя написанная статья (здесь будет указано название статьи и несколько
                                 строчек)</p>
-                            <a class="call-to-action" href="http://themehorse.com/themes" title="View Themes">
+                            <a class="call-to-action" href="#" title="Узнать подробнее">
                                 Узнать подробнее
-                            </a> <!-- .call-to-action -->
+                            </a>
                         </div>
                         <div class="one-fourth">
-                            <a title="Выигранные суды" href="#">
+                            <a title="Выигранные суды (судебная практика)" href="#">
                                 <img width="474" height="342"
-                                     src="{{ url(config('app.staticUrl') . '/files/tumblr_myebwtELvb1st5lhmo1_1280-474x342.jpg') }}"
-                                     class="attachment-gallery wp-post-image"
-                                     alt="Выигранные суды">
+                                     src="{{ url(config('app.staticUrl') . '/files/vyigrannye-sudy-sudebnaya-praktika.png') }}"
+                                     alt="Судебная практика">
                             </a>
 
                             <h3 class="custom-gallery-title">
@@ -255,12 +272,10 @@
                                 Описание нашей судебной практики и обзор выигранных нами дел.
                             </p>
                         </div>
-                        <!-- .one-fourth -->
                         <div class="one-fourth clearfix-half">
                             <a title="Новое в российском законодательстве" href="#">
                                 <img width="474" height="342"
-                                     src="{{ url(config('app.staticUrl') . '/files/diary-474x342.jpg') }}"
-                                     class="attachment-gallery wp-post-image"
+                                     src="{{ url(config('app.staticUrl') . '/files/novoe-v-rossijskom-zakonodatelstve.png') }}"
                                      alt="Новое в российском законодательстве">
                             </a>
 
@@ -272,13 +287,11 @@
                                 Обзоры наиболее важных и интересных документов.
                             </p>
                         </div>
-                        <!-- .one-fourth -->
                         <div class="one-fourth">
                             <a title="Задать вопрос нашему юристу" href="#">
                                 <img width="474" height="342"
-                                     src="{{ url(config('app.staticUrl') . '/files/business-break-474x342.jpg') }}"
-                                     class="attachment-gallery wp-post-image"
-                                     alt="Задать вопрос нашему юристу">
+                                     src="{{ url(config('app.staticUrl') . '/files/zadat-vopros-yuristu.png') }}"
+                                     alt="Задать вопрос юристу">
                             </a>
 
                             <h3 class="custom-gallery-title">
@@ -289,64 +302,9 @@
                                 Задавайте нам вопросы, не стесняйтесь!
                             </p>
                         </div>
-                        <!-- .one-fourth -->
                     </div>
                 </section>
-                <!-- Что говорят клиенты о нас?
-                    <section id="interface_testimonial-2" class="widget widget_testimonial">
-                        <h2 class="widget-title">Что говорят клиенты о нас?</h2>
-
-                        <div class="column clearfix">
-                            <div class="one-half">
-                                <div class="testimonial-image"><img src="{{ asset('files/client.jpg') }}"
-                                                                    title="Guenter Weber" alt="Guenter Weber"></div>
-                                <div class="testimonial-content">
-                                    <p>
-                                        Clean, professional appearance, responsive design, all the admin options easy to
-                                        understand and implement - hard to make a mistake with a theme this thoroughly
-                                        thought out and well-organized.
-                                    </p>
-
-                                    <div class="testimonial-meta"><strong>Guenter Weber</strong> WordPress Lover - <a
-                                                href="#" title="ABC Inc" target="_blank"> ABC Inc</a></div>
-                                </div>
-                            </div>
-                            <div class="one-half">
-                                <div class="testimonial-image"><img src="{{ asset('files/client-2.jpg') }}"
-                                                                    title="Katre Tattar" alt="Katre Tattar"></div>
-                                <div class="testimonial-content">
-                                    <p>
-                                        Clean, professional appearance, responsive design, all the admin options easy to
-                                        understand and implement - hard to make a mistake with a theme this thoroughly
-                                        thought out and well-organized.
-                                    </p>
-
-                                    <div class="testimonial-meta"><strong>Katre Tattar</strong> WordPress Lover - <a
-                                                href="#" title="ABC Inc" target="_blank"> ABC Inc</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    -->
             </div>
         </div>
     </div>
-
-    <!-- Логотипы клиентов.
-        <div id="interface_featured_image_widget-3" class="widget widget_ourclients">
-            <div class="container">
-                <ul>
-                    <li><a href="http://wordpress.org" title="featured logo" target="_blank">
-                            <img src="{{ asset('files/wordpress1.png') }}" alt="featured logo">
-                        </a></li>
-                    <li><a href="http://jquery.com/" title="featured logo" target="_blank">
-                            <img src="{{ asset('files/jquery1.png') }}" alt="featured logo">
-                        </a></li>
-                    <li><a href="http://bbpress.org" title="featured logo" target="_blank">
-                            <img src="{{ asset('files/bbpress1.png') }}" alt="featured logo">
-                        </a></li>
-                </ul>
-            </div>
-        </div>
-        -->
 @endsection

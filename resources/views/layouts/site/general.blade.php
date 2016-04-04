@@ -23,16 +23,17 @@
                     <div class="info clearfix">
                         <ul>
                             <li class="phone-number">
-                                <a title="Нажмите, чтобы позвонить нам." href="tel:2889128">288-91-28</a>
+                                <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">288-91-28</a>
                             </li>
                             <li class="email">
                                 <a title="Нажмите, чтобы написать нам."
                                    href="mailto:jurist@ettorgova.ru">jurist@ettorgova.ru</a>
                             </li>
                             <li class="address">
-                                <a title="Нажмите, чтобы посмотреть на карте 2gis."
-                                   href="http://2gis.ru/n_novgorod/firm/70000001020079197/center/43.920625%2C56.279145/tab/firms/zoom/17"
-                                   target="_blank">
+                                <a title="Нажмите, чтобы посмотреть на карте от Яндекс."
+                                   href="https://yandex.ru/maps/-/CVHsFSmB"
+                                   target="_blank"
+                                   rel="nofollow">
                                     Нижний Новгород, проспект Ленина, 51 (с.м. Двигатель Революции)
                                 </a>
                             </li>
@@ -41,13 +42,13 @@
                     <div class="social-profiles clearfix">
                         <ul>
                             <li class="facebook">
-                                <a href="#"
-                                   title="ЮК Торгова и партнёры в Facebook"
+                                <a href="https://vk.com/ettorgova"
+                                   title="ЮК Торгова и партнёры в VK"
                                    target="_blank">
                                 </a>
                             </li>
                             <li class="twitter">
-                                <a href="#"
+                                <a href="https://twitter.com/ettorgova"
                                    title="ЮК Торгова и партнёры в Twitter"
                                    target="_blank">
                                 </a>
@@ -123,8 +124,8 @@
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                     <a href="#">Полезная информация</a>
                                 </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#">Контакты</a>
+                                <li class="{{ explode('/', Route::getCurrentRoute()->getUri())[0] == 'kontakty' ? 'current-menu-item' : '' }}">
+                                    <a href="{{ route('kontakty') }}">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -154,24 +155,20 @@
 
                                 <div class="menu-secondary-menu-container">
                                     <ul id="menu-secondary-menu" class="menu">
-                                        <li id="menu-item-162"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-162">
-                                            <a href="{{ route('site.index') }}">Главная страница</a></li>
-                                        <li id="menu-item-165"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-165">
+                                        <li>
+                                            <a href="{{ route('site.index') }}">Главная страница</a>
+                                        </li>
+                                        <li>
                                             <a href="{{ route('uslugi') }}">Услуги</a>
                                         </li>
-                                        <li id="menu-item-166"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166">
+                                        <li>
                                             <a href="#">Акции</a>
                                         </li>
-                                        <li id="menu-item-166"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166">
+                                        <li>
                                             <a href="#">Полезная информация</a>
                                         </li>
-                                        <li id="menu-item-166"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166">
-                                            <a href="#">Контакты</a>
+                                        <li>
+                                            <a href="{{ route('kontakty') }}">Контакты</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -206,8 +203,12 @@
                                         Революции)
                                     </p>
 
-                                    <p>Телефон: 8 (831) 288-91-28<br>
-                                        Мобильный телефон: +7 (999) 079-078-1<br>
+                                    <p>Телефон: <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">
+                                            8 (831) 288-91-28</a>
+                                        <br>
+                                        Мобильный телефон: <a title="Нажмите, чтобы позвонить нам." href="tel:+79990790781">
+                                            +7 (999) 079-078-1</a>
+                                        <br>
                                         Email: <a href="mailto:jurist@ettorgova.ru"
                                                   title="Написать нам">jurist@ettorgova.ru</a><br>
                                         Сайт: <a href="{{ route('site.index') }}" target="_blank"
@@ -223,16 +224,17 @@
                     <div class="info clearfix">
                         <ul>
                             <li class="phone-number">
-                                <a title="Нажмите, чтобы позвонить нам." href="tel:2889128">288-91-28</a>
+                                <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">288-91-28</a>
                             </li>
                             <li class="email">
                                 <a title="Нажмите, чтобы написать нам."
                                    href="mailto:jurist@ettorgova.ru">jurist@ettorgova.ru</a>
                             </li>
                             <li class="address">
-                                <a title="Нажмите, чтобы посмотреть на карте 2gis."
-                                   href="http://2gis.ru/n_novgorod/firm/70000001020079197/center/43.920625%2C56.279145/tab/firms/zoom/17"
-                                   target="_blank">
+                                <a title="Нажмите, чтобы посмотреть на карте от Яндекс."
+                                   href="https://yandex.ru/maps/-/CVHsFSmB"
+                                   target="_blank"
+                                   rel="nofollow">
                                     Нижний Новгород, проспект Ленина, 51 (с.м. Двигатель Революции)
                                 </a>
                             </li>
@@ -246,13 +248,13 @@
                     <div class="social-profiles clearfix">
                         <ul>
                             <li class="facebook">
-                                <a href="#"
-                                   title="ЮК Торгова и партнёры в Facebook"
+                                <a href="https://vk.com/ettorgova"
+                                   title="ЮК Торгова и партнёры в VK"
                                    target="_blank">
                                 </a>
                             </li>
                             <li class="twitter">
-                                <a href="#"
+                                <a href="https://twitter.com/ettorgova"
                                    title="ЮК Торгова и партнёры в Twitter"
                                    target="_blank">
                                 </a>
@@ -261,20 +263,21 @@
                     </div>
                     <div class="copyright">
                         Copyright &copy;
-                        <a href="{{ route('site.index') }}"
-                           title='Юридическая компания "Торгова и партнёры"'>
+                        <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
                             <span>ЮК "Торгова и партнеры"</span>
-                        </a> 2015 | Дизайн компании
-                        <a href="http://themehorse.com"
-                           target="_blank"
-                           title="Theme Horse">
-                            <span>Theme Horse</span>
-                        </a>
+                        </a> 2015 - 2016
+                        <!--noindex-->
+                            | Дизайн компании
+                            <a href="http://themehorse.com" target="_blank" title="Дизайн компании Theme Horse" rel="nofollow">
+                                <span>Theme Horse</span>
+                            </a>
+                        <!--/noindex-->
                     </div>
                 </div>
             </div>
             <div class="back-to-top"><a href="#branding"> </a></div>
         </footer>
     </div>
+    <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34003970 = new Ya.Metrika({ id:34003970, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/34003970" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
     </body>
 @endsection

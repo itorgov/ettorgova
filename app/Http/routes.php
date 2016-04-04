@@ -1,65 +1,46 @@
 <?php
 
-Route::get('/', [
+Route::get('', [
     'as' => 'site.index',
-    function () {
-        return view('site.index');
-    }
+    'uses' => 'SiteController@index'
 ]);
-
-Route::group(['prefix' => 'uslugi'], function () {
-    Route::get('/', [
-        'as' => 'uslugi',
-        function () {
-            return view('site.services.index');
-        }
-    ]);
-    Route::get('yuridicheskoe-konsultirovanie', [
-        'as' => 'yuridicheskoe-konsultirovanie',
-        function () {
-            return view('site.services.yuridicheskoe-konsultirovanie');
-        }
-    ]);
-    Route::get('registraciya-predprinimatelej', [
-        'as' => 'registraciya-predprinimatelej',
-        function () {
-            return view('site.services.registraciya-predprinimatelej');
-        }
-    ]);
-    Route::get('registraciya-organizacij', [
-        'as' => 'registraciya-organizacij',
-        function () {
-            return view('site.services.registraciya-organizacij');
-        }
-    ]);
-    Route::get('yuridicheskoe-soprovozhdenie-biznesa', [
-        'as' => 'yuridicheskoe-soprovozhdenie-biznesa',
-        function () {
-            return view('site.services.yuridicheskoe-soprovozhdenie-biznesa');
-        }
-    ]);
-    Route::get('predstavitelstvo-v-arbitrazhnyh-sudah', [
-        'as' => 'predstavitelstvo-v-arbitrazhnyh-sudah',
-        function () {
-            return view('site.services.predstavitelstvo-v-arbitrazhnyh-sudah');
-        }
-    ]);
-    Route::get('predstavitelstvo-v-sude', [
-        'as' => 'predstavitelstvo-v-sude',
-        function () {
-            return view('site.services.predstavitelstvo-v-sude');
-        }
-    ]);
-    Route::get('podgotovka-yuridicheskih-dokumentov', [
-        'as' => 'podgotovka-yuridicheskih-dokumentov',
-        function () {
-            return view('site.services.podgotovka-yuridicheskih-dokumentov');
-        }
-    ]);
-    Route::get('soprovozhdenie-sdelok-s-nedvizhimostyu', [
-        'as' => 'soprovozhdenie-sdelok-s-nedvizhimostyu',
-        function () {
-            return view('site.services.soprovozhdenie-sdelok-s-nedvizhimostyu');
-        }
-    ]);
-});
+Route::get('kontakty', [
+    'as' => 'kontakty',
+    'uses' => 'SiteController@kontakty'
+]);
+Route::get('uslugi', [
+    'as' => 'uslugi',
+    'uses' => 'SiteController@services'
+]);
+Route::get('uslugi/yuridicheskoe-konsultirovanie', [
+    'as' => 'yuridicheskoe-konsultirovanie',
+    'uses' => 'SiteController@yuridicheskoeKonsultirovanie'
+]);
+Route::get('registraciya-predprinimatelej', [
+    'as' => 'registraciya-predprinimatelej',
+    'uses' => 'SiteController@registraciyaPredprinimatelej'
+]);
+Route::get('registraciya-organizacij', [
+    'as' => 'registraciya-organizacij',
+    'uses' => 'SiteController@registraciyaOrganizacij'
+]);
+Route::get('yuridicheskoe-soprovozhdenie-biznesa', [
+    'as' => 'yuridicheskoe-soprovozhdenie-biznesa',
+    'uses' => 'SiteController@yuridicheskoeSoprovozhdenieBiznesa'
+]);
+Route::get('predstavitelstvo-v-arbitrazhnyh-sudah', [
+    'as' => 'predstavitelstvo-v-arbitrazhnyh-sudah',
+    'uses' => 'SiteController@predstavitelstvoVArbitrazhnyhSudah'
+]);
+Route::get('predstavitelstvo-v-sude', [
+    'as' => 'predstavitelstvo-v-sude',
+    'uses' => 'SiteController@predstavitelstvoVSude'
+]);
+Route::get('podgotovka-yuridicheskih-dokumentov', [
+    'as' => 'podgotovka-yuridicheskih-dokumentov',
+    'uses' => 'SiteController@podgotovkaYuridicheskihDokumentov'
+]);
+Route::get('soprovozhdenie-sdelok-s-nedvizhimostyu', [
+    'as' => 'soprovozhdenie-sdelok-s-nedvizhimostyu',
+    'uses' => 'SiteController@soprovozhdenieSdelokSNedvizhimostyu'
+]);
