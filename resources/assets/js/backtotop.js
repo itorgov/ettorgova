@@ -17,7 +17,7 @@ jQuery(document).ready(function () {
         jQuery('.back-to-top a').click(function () {
             jQuery('body,html,header').animate({
                 scrollTop: 0
-            }, 800);
+            }, 300);
             return false;
         });
     });
