@@ -1,4 +1,16 @@
 var elixir = require('laravel-elixir');
+var gulp = require('gulp');
+var uncss = require('gulp-uncss');
+var nano = require('gulp-cssnano');
+
+gulp.task('nano', function () {
+    return gulp.src('public/css/all.css')
+        .pipe(uncss({
+            html: ['resources/views/**/*.php']
+        }))
+        .pipe(nano())
+        .pipe(gulp.dest('public/css/all-min.css'));
+});
 
 elixir(function(mix) {
     mix.styles([
@@ -14,4 +26,5 @@ elixir(function(mix) {
         'backtotop.js',
         'scripts.js'
     ]);
+    mix.task('nano');
 });

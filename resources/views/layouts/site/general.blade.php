@@ -15,7 +15,7 @@
 @endsection
 
 @section('body')
-    <body class="page page-template-default full-width-template">
+    <body class="full-width-template">
     <div class="wrapper">
         <header id="branding">
             <div class="info-bar">
