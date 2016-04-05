@@ -31,4 +31,16 @@ jQuery(function () {
             wrapper.find('.s').focus();
         }
     });
+    jQuery('body').on('click', function (event) {
+        var searchButton = jQuery('.search-toggle');
+        var searchBox = jQuery('#search-box');
+
+        if (event.target !== searchButton[0] &&
+            event.target !== searchBox[0] &&
+            jQuery(event.target).parents('div#search-box')[0] !== searchBox[0] &&
+            !searchBox.is('.hide')
+        ) {
+            searchBox.toggleClass('hide');
+        }
+    });
 });
