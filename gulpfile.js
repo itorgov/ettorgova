@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 
+elixir.config.sourcemaps = true;
+
 elixir(function(mix) {
     mix.styles([
         'fonts.css',
