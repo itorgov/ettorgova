@@ -16,4 +16,5 @@ elixir(function(mix) {
         'backtotop.js',
         'scripts.js'
     ]);
+    mix.copy('resources/assets/font', 'public/font');
 });
