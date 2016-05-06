@@ -207,7 +207,8 @@
                                     <p>Телефон: <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">
                                             8 (831) 288-91-28</a>
                                         <br>
-                                        Мобильный телефон: <a title="Нажмите, чтобы позвонить нам." href="tel:+79990790781">
+                                        Мобильный телефон: <a title="Нажмите, чтобы позвонить нам."
+                                                              href="tel:+79990790781">
                                             +7 (999) 079-078-1</a>
                                         <br>
                                         Email: <a href="mailto:jurist@ettorgova.ru"
@@ -268,10 +269,11 @@
                             <span>ЮК "Торгова и партнеры"</span>
                         </a> 2015 - 2016
                         <!--noindex-->
-                            | Дизайн компании
-                            <a href="http://themehorse.com" target="_blank" title="Дизайн компании Theme Horse" rel="nofollow">
-                                <span>Theme Horse</span>
-                            </a>
+                        | Дизайн компании
+                        <a href="http://themehorse.com" target="_blank" title="Дизайн компании Theme Horse"
+                           rel="nofollow">
+                            <span>Theme Horse</span>
+                        </a>
                         <!--/noindex-->
                     </div>
                 </div>
@@ -279,6 +281,37 @@
             <div class="back-to-top"><a href="#branding"> </a></div>
         </footer>
     </div>
-    <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34003970 = new Ya.Metrika({ id:34003970, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/34003970" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    @if (App::environment('production'))
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript"> (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter34003970 = new Ya.Metrika({
+                        id: 34003970,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) {
+                }
+            });
+            var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");</script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/34003970" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    @endif
     </body>
 @endsection
