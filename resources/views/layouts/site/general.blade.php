@@ -1,3 +1,4 @@
+@inject('routeHelper', 'App\Services\RouteHelper')
 @extends('layouts.master')
 
 @section('meta')
@@ -70,49 +71,49 @@
                     <section class="hgroup-right">
                         <nav id="access" class="clearfix">
                             <ul class="nav-menu">
-                                <li class="{{ explode('/', Route::getCurrentRoute()->getUri())[0] == '' ? 'current-menu-item' : '' }}">
+                                <li class="{{ $routeHelper->checkActiveMenuItem('', 'current-menu-item') }}">
                                     <a href="{{ route('site.index') }}">Главная</a>
                                 </li>
-                                <li class="{{ explode('/', Route::getCurrentRoute()->getUri())[0] == 'uslugi' ? 'current-menu-item' : '' }}">
+                                <li class="{{ $routeHelper->checkActiveMenuItem('uslugi', 'current-menu-item') }}">
                                     <a href="{{ route('uslugi') }}">Услуги</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="{{ route('yuridicheskoe-konsultirovanie') }}">
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('yuridicheskoe-konsultirovanie', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'yuridicheskoe-konsultirovanie']) }}">
                                                 Юридическое консультирование
                                             </a>
                                         </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="{{ route('registraciya-predprinimatelej') }}">
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('registraciya-predprinimatelej', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'registraciya-predprinimatelej']) }}">
                                                 Регистрация предпринимателей
                                             </a>
                                         </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="{{ route('registraciya-organizacij') }}">
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('registraciya-organizacij', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'registraciya-organizacij']) }}">
                                                 Регистрация организаций
                                             </a>
                                         </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="{{ route('yuridicheskoe-soprovozhdenie-biznesa') }}">
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('yuridicheskoe-soprovozhdenie-biznesa', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'yuridicheskoe-soprovozhdenie-biznesa']) }}">
                                                 Юридическое сопровождение бизнеса
                                             </a>
                                         </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="{{ route('predstavitelstvo-v-arbitrazhnyh-sudah') }}">
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('predstavitelstvo-v-arbitrazhnyh-sudah', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'predstavitelstvo-v-arbitrazhnyh-sudah']) }}">
                                                 Представительство в Арбитражных судах
                                             </a>
                                         </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="{{ route('predstavitelstvo-v-sude') }}">
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('predstavitelstvo-v-sude', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'predstavitelstvo-v-sude']) }}">
                                                 Представительство в суде
                                             </a>
                                         </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="{{ route('podgotovka-yuridicheskih-dokumentov') }}">
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('podgotovka-yuridicheskih-dokumentov', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'podgotovka-yuridicheskih-dokumentov']) }}">
                                                 Подготовка юридических документов
                                             </a>
                                         </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="{{ route('soprovozhdenie-sdelok-s-nedvizhimostyu') }}">
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('soprovozhdenie-sdelok-s-nedvizhimostyu', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'soprovozhdenie-sdelok-s-nedvizhimostyu']) }}">
                                                 Сопровождение сделок с недвижимостью
                                             </a>
                                         </li>
@@ -124,7 +125,7 @@
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                     <a href="#">Полезная информация</a>
                                 </li>
-                                <li class="{{ explode('/', Route::getCurrentRoute()->getUri())[0] == 'kontakty' ? 'current-menu-item' : '' }}">
+                                <li class="{{ $routeHelper->checkActiveMenuItem('kontakty', 'current-menu-item') }}">
                                     <a href="{{ route('kontakty') }}">Контакты</a>
                                 </li>
                             </ul>

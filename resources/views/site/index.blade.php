@@ -75,7 +75,7 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('yuridicheskoe-konsultirovanie') }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'yuridicheskoe-konsultirovanie']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
@@ -96,7 +96,7 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('registraciya-predprinimatelej') }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'registraciya-predprinimatelej']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth clearfix-half">
                             <div class="service-item clearfix">
@@ -117,7 +117,7 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('registraciya-organizacij') }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'registraciya-organizacij']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
@@ -138,7 +138,7 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('yuridicheskoe-soprovozhdenie-biznesa') }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'yuridicheskoe-soprovozhdenie-biznesa']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth clearfix-half clearfix-fourth">
                             <div class="service-item clearfix">
@@ -160,7 +160,7 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('predstavitelstvo-v-arbitrazhnyh-sudah') }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'predstavitelstvo-v-arbitrazhnyh-sudah']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
@@ -181,7 +181,7 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('predstavitelstvo-v-sude') }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'predstavitelstvo-v-sude']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth clearfix-half">
                             <div class="service-item clearfix">
@@ -203,7 +203,7 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('podgotovka-yuridicheskih-dokumentov') }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'podgotovka-yuridicheskih-dokumentov']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
@@ -225,7 +225,7 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('soprovozhdenie-sdelok-s-nedvizhimostyu') }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'soprovozhdenie-sdelok-s-nedvizhimostyu']) }}">Подробнее</a>
                         </div>
                     </div>
                 </section>
@@ -251,10 +251,11 @@
                         <div class="one-fourth">
                             <h2 class="widget-title">Статьи, которые мы пишем</h2>
 
-                            <p>Последняя написанная статья (здесь будет указано название статьи и несколько
-                                строчек)</p>
-                            <a class="call-to-action" href="#" title="Узнать подробнее">
-                                Узнать подробнее
+                            <p>
+                                Что делать, если работодатель отказывается выдать трудовую книжку работнику?
+                            </p>
+                            <a class="call-to-action" href="#" title="Читать статью">
+                                Читать статью
                             </a>
                         </div>
                         <div class="one-fourth">

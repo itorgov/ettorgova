@@ -1077,6 +1077,10 @@ a.more-link:hover {
     color: #63C6AE;
 }
 
+#access ul li ul li.current-menu-item a {
+    color: #63C6AE;
+}
+
 #access ul li ul li ul {
     left: 190px;
     top: 0;

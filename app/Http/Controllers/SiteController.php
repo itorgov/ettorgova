@@ -14,48 +14,14 @@ class SiteController extends Controller
         return view('site.kontakty');
     }
 
-    public function services()
+    public function services($name = 'index')
     {
-        return view('site.services.index');
-    }
+        $viewName = 'site.services.' . $name;
 
-    public function yuridicheskoeKonsultirovanie()
-    {
-        return view('site.services.yuridicheskoe-konsultirovanie');
-    }
+        if (!view()->exists($viewName)) {
+            return abort(404);
+        }
 
-    public function registraciyaPredprinimatelej()
-    {
-        return view('site.services.registraciya-predprinimatelej');
-    }
-
-    public function registraciyaOrganizacij()
-    {
-        return view('site.services.registraciya-organizacij');
-    }
-
-    public function yuridicheskoeSoprovozhdenieBiznesa()
-    {
-        return view('site.services.yuridicheskoe-soprovozhdenie-biznesa');
-    }
-
-    public function predstavitelstvoVArbitrazhnyhSudah()
-    {
-        return view('site.services.predstavitelstvo-v-arbitrazhnyh-sudah');
-    }
-
-    public function predstavitelstvoVSude()
-    {
-        return view('site.services.predstavitelstvo-v-sude');
-    }
-
-    public function podgotovkaYuridicheskihDokumentov()
-    {
-        return view('site.services.podgotovka-yuridicheskih-dokumentov');
-    }
-
-    public function soprovozhdenieSdelokSNedvizhimostyu()
-    {
-        return view('site.services.soprovozhdenie-sdelok-s-nedvizhimostyu');
+        return view($viewName);
     }
 }
