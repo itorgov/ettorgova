@@ -12,3 +12,7 @@ Route::get('uslugi/{name?}', [
     'as' => 'uslugi',
     'uses' => 'SiteController@services'
 ]);
+Route::get('useful/stati/{name?}', [
+    'as' => 'stati',
+    'uses' => 'SiteController@stati'
+]);

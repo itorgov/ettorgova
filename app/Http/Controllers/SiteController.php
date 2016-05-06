@@ -24,4 +24,15 @@ class SiteController extends Controller
 
         return view($viewName);
     }
+
+    public function stati($name = 'index')
+    {
+        $viewName = 'site.useful.articles.' . $name;
+
+        if (!view()->exists($viewName)) {
+            return abort(404);
+        }
+
+        return view($viewName);
+    }
 }

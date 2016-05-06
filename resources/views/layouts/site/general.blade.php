@@ -122,8 +122,15 @@
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                     <a href="#">Акции</a>
                                 </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <li class="{{ $routeHelper->checkActiveMenuItem('useful', 'current-menu-item') }}">
                                     <a href="#">Полезная информация</a>
+                                    <ul class="sub-menu">
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('stati', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('stati') }}">
+                                                Статьи, которые мы пишем
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="{{ $routeHelper->checkActiveMenuItem('kontakty', 'current-menu-item') }}">
                                     <a href="{{ route('kontakty') }}">Контакты</a>
@@ -166,7 +173,7 @@
                                             <a href="#">Акции</a>
                                         </li>
                                         <li>
-                                            <a href="#">Полезная информация</a>
+                                            <a href="{{ route('stati') }}">Статьи, которые мы пишем</a>
                                         </li>
                                         <li>
                                             <a href="{{ route('kontakty') }}">Контакты</a>
@@ -282,7 +289,7 @@
         </footer>
     </div>
     @if (App::environment('production'))
-    <!-- Yandex.Metrika counter -->
+            <!-- Yandex.Metrika counter -->
     <script type="text/javascript"> (function (d, w, c) {
             (w[c] = w[c] || []).push(function () {
                 try {
