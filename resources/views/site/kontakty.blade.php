@@ -7,7 +7,8 @@
 
 @section('js')
     @parent
-    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3tv74VP_LS9oBz-KnRdKrwAyXNn4qCAo&width=100%&height=450&lang=ru_RU&sourceType=constructor&id=map"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3tv74VP_LS9oBz-KnRdKrwAyXNn4qCAo&width=100%&height=450&lang=ru_RU&sourceType=constructor&id=map"></script>
 @endsection
 
 @section('header')
@@ -31,17 +32,20 @@
         <div class="container">
             <div id="content">
                 <section>
-                    <div class="column">
-                        <p>Юридическая компания "Торгова и партнёры" располагается в Нижнем Новгороде на проспекте Ленина, дом 51, офис 3.</p>
-                        <p><strong>Время работы</strong>: понедельник - пятница с 10:00 до 19:00.</p>
-                        <p>
-                            <strong>Телефон</strong>: <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">288-91-28</a>
-                            <strong>Мобильный телефон</strong>: <a title="Нажмите, чтобы позвонить нам." href="tel:+79990790781">+7 (999) 079-078-1</a>
-                        </p>
-                    </div>
+                        <div class="entry-content">
+                            <p>Юридическая компания "Торгова и партнёры" располагается в Нижнем Новгороде на проспекте
+                                Ленина, дом 51, офис 3.</p>
+                            <p><strong>Время работы</strong>: понедельник - пятница, с 10:00 до 19:00.</p>
+                            <p>
+                                <strong>Телефон</strong>: <a title="Нажмите, чтобы позвонить нам."
+                                                             href="tel:+78312889128">288-91-28</a><br/>
+                                <strong>Мобильный телефон</strong>: <a title="Нажмите, чтобы позвонить нам."
+                                                                       href="tel:+79990790781">+7 (999) 079-078-1</a>
+                            </p>
+                        </div>
                 </section>
                 <section>
-                    <div class="column" id="map"></div>
+                    <div class="entry-content" id="map"></div>
                 </section>
             </div>
         </div>
