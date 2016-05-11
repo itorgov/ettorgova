@@ -3,6 +3,10 @@
 
 @section('meta')
     @parent
+    <meta name="Keywords" content="@yield('page-keywords')"/>
+    <meta name="Description" content="@yield('page-description')"/>
+    <meta property="og:title" content="@yield('title') - ЮК Торгова и партнёры"/>
+    <meta property="og:description" content="@yield('page-description')"/>
 @endsection
 
 @section('css')
@@ -188,8 +192,8 @@
                                 <h2 class="widget-title">О компани</h2>
 
                                 <div class="textwidget">
-                                    ЮК "Торгова и партнеры" - молодая и активно развивающаяся компания. Непрерывное
-                                    отслеживание нововведений в области права позволяет заранее предугадывать ходы
+                                    ЮК "Торгова и партнёры" - молодая и активно развивающаяся компания. Непрерывное
+                                    отслеживание нововведений в области права позволяет нам заранее предугадывать ходы
                                     для
                                     решения ваших вопросов.<br/>Мы оказываем юридические услуги гражданам и юридическим
                                     лицам, предлагаем различные варианты сотрудничества - от разового сопровождения
@@ -297,8 +301,7 @@
                         id: 34003970,
                         clickmap: true,
                         trackLinks: true,
-                        accurateTrackBounce: true,
-                        webvisor: true
+                        accurateTrackBounce: true
                     });
                 } catch (e) {
                 }
@@ -314,11 +317,10 @@
             } else {
                 f();
             }
-        })(document, window, "yandex_metrika_callbacks");</script>
+        })(document, window, "yandex_metrika_callbacks"); </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/34003970" style="position:absolute; left:-9999px;" alt=""/></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
+    </noscript> <!-- /Yandex.Metrika counter -->
     @endif
     </body>
 @endsection

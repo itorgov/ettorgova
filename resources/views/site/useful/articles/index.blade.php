@@ -2,6 +2,9 @@
 
 @section('title', 'Статьи, которые мы пишем')
 
+@section('page-keywords', 'юридические статьи')
+@section('page-description', 'Статьи, которые мы пишем. Юридическая компания Торгова и партнёры.')
+
 @section('header')
     <div class="page-title-wrap">
         <div class="container clearfix">

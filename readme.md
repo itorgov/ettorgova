@@ -1,27 +1,16 @@
-## Laravel PHP Framework
+## Общая информация
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Приложение написано на PHP фреймворке Laravel 5.2.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Установка
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+* Склонировать проект ```git clone git@bitbucket.org:WiDeIvan/ettorgova.git```, ```cd ettorgova```
+* Установить Laravel ```composer install```
+* Создать файл окружения ```cp .env.example .env```
+* Сгенерировать ключ шифрования ```php artisan key:generate```
+* Отредактировать .env файл (_APP_ENV=production_, _APP_DEBUG=false_, _APP_URL=https://ettorgova.ru_)
+* Если не установлен node js (для проверки ввести ```node -v```), то [установить](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+* Если не установлен gulp, то установить командой ```npm install --global gulp```
+* Установить node модули, требуемые для приложения ```npm install```. Если при установке вылетает ошибка (Killed), то скорее всего на сервере не хватает оперативной памяти. Решаяется 3 способами: добавить оперативную память на сервер, увеличить swap раздел или выполнить команду на другом компьютере и перенести папку node_modules на сервер.
+* Запустить сборщик ```gulp --production```
+* Установить права доступа ```chmod -R 0777 bootstrap/cache/```, ```chmod -R 0777 storage/```

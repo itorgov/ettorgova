@@ -2,6 +2,9 @@
 
 @section('title', 'Контакты')
 
+@section('page-keywords', 'контактная информация торгова и партнёры')
+@section('page-description', 'Контактная информация юридической компании Торгова и партнёры')
+
 @section('js')
     @parent
     <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3tv74VP_LS9oBz-KnRdKrwAyXNn4qCAo&width=100%&height=450&lang=ru_RU&sourceType=constructor&id=map"></script>
