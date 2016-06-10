@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title>@yield('title') - ЮК "Торгова и партнёры"</title>
+    <title>@yield('title')</title>
+    <link rel="canonical" href="{{ url()->current() }}" />
     @section('meta')
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

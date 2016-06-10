@@ -1,2 +1,18 @@
+User-agent: Yandex
+Disallow: /admin
+Sitemap: https://ettorgova.ru/sitemap.xml
+Host: https://ettorgova.ru
+
+User-agent: Googlebot
+Disallow: /admin
+Sitemap: https://ettorgova.ru/sitemap.xml
+Host: https://ettorgova.ru
+
+User-agent: Mail.Ru
+Disallow: /admin
+Sitemap: https://ettorgova.ru/sitemap.xml
+Host: https://ettorgova.ru
+
 User-agent: *
-Disallow:
+Disallow: /admin
+Host: https://ettorgova.ru
