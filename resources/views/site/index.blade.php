@@ -61,12 +61,6 @@
                     <div class="column clearfix">
                         <div class="one-fourth">
                             <div class="service-item clearfix">
-                                <div class="service-icon">
-                                    <img width="100" height="100"
-                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
-                                         class="attachment-icon wp-post-image"
-                                         alt="Юридическое консультирование">
-                                </div>
                                 <h3 class="service-title">Юридическое консультирование</h3>
                             </div>
                             <article>
@@ -82,12 +76,6 @@
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
-                                <div class="service-icon">
-                                    <img width="100" height="100"
-                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
-                                         class="attachment-icon wp-post-image"
-                                         alt="Регистрация предпринимателей">
-                                </div>
                                 <h3 class="service-title">Регистрация предпринимателей</h3>
                             </div>
                             <article>
@@ -103,12 +91,6 @@
                         </div>
                         <div class="one-fourth clearfix-half">
                             <div class="service-item clearfix">
-                                <div class="service-icon">
-                                    <img width="100" height="100"
-                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
-                                         class="attachment-icon wp-post-image"
-                                         alt="Регистрация организаций">
-                                </div>
                                 <h3 class="service-title">Регистрация организаций</h3>
                             </div>
                             <article>
@@ -124,12 +106,6 @@
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
-                                <div class="service-icon">
-                                    <img width="100" height="100"
-                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
-                                         class="attachment-icon wp-post-image"
-                                         alt="Юридическое сопровождение бизнеса">
-                                </div>
                                 <h3 class="service-title">Юридическое сопровождение бизнеса</h3>
                             </div>
                             <article>
@@ -145,12 +121,6 @@
                         </div>
                         <div class="one-fourth clearfix-half clearfix-fourth">
                             <div class="service-item clearfix">
-                                <div class="service-icon">
-                                    <img width="100" height="100"
-                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
-                                         class="attachment-icon wp-post-image"
-                                         alt="Услуги юриста в арбитраже">
-                                </div>
                                 <h3 class="service-title">Услуги юриста в арбитраже</h3>
                             </div>
                             <article>
@@ -167,12 +137,6 @@
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
-                                <div class="service-icon">
-                                    <img width="100" height="100"
-                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
-                                         class="attachment-icon wp-post-image"
-                                         alt="Представительство в суде">
-                                </div>
                                 <h3 class="service-title">Представительство в суде</h3>
                             </div>
                             <article>
@@ -188,12 +152,6 @@
                         </div>
                         <div class="one-fourth clearfix-half">
                             <div class="service-item clearfix">
-                                <div class="service-icon">
-                                    <img width="100" height="100"
-                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
-                                         class="attachment-icon wp-post-image"
-                                         alt="Составление/анализ документов">
-                                </div>
                                 <h3 class="service-title">Составление/анализ документов</h3>
                             </div>
                             <article>
@@ -210,12 +168,6 @@
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
-                                <div class="service-icon">
-                                    <img width="100" height="100"
-                                         src="{{ url(config('app.staticUrl') . '/files/icon-7.jpg') }}"
-                                         class="attachment-icon wp-post-image"
-                                         alt="Сопровождение сделок с недвижимостью">
-                                </div>
                                 <h3 class="service-title">Сопровождение сделок с недвижимостью</h3>
                             </div>
                             <article>
