@@ -656,7 +656,7 @@ a.more-link:hover {
 }
 
 .back-to-top a:before {
-    content: '\f432';
+    content: '\f106';
 }
 
 /* =Header
@@ -695,15 +695,15 @@ a.more-link:hover {
 }
 
 .info-bar .info ul li.phone-number:before {
-    content: '\f437';
+    content: '\f095';
 }
 
 .info-bar .info ul li.email:before {
-    content: '\f410';
+    content: '\f0e0';
 }
 
 .info-bar .info ul li.address:before {
-    content: '\f417';
+    content: '\f041';
 }
 
 .info-bar .info ul li a {
@@ -798,28 +798,12 @@ a.more-link:hover {
     filter: alpha(opacity=100);
 }
 
-.social-profiles ul li.github a {
-    background-color: #000;
-}
-
-.social-profiles ul li.github a:before {
-    content: '\f200';
-}
-
-.social-profiles ul li.dribbble a {
-    background-color: #ea4c89;
-}
-
-.social-profiles ul li.dribbble a:before {
-    content: '\f201';
-}
-
 .social-profiles ul li.twitter a {
     background-color: #55acee;
 }
 
 .social-profiles ul li.twitter a:before {
-    content: '\f202';
+    content: '\f099';
 }
 
 .social-profiles ul li.vk a {
@@ -835,63 +819,7 @@ a.more-link:hover {
 }
 
 .social-profiles ul li.facebook a:before {
-    content: '\f204';
-}
-
-.social-profiles ul li.wordpress a {
-    background-color: #21759b;
-}
-
-.social-profiles ul li.wordpress a:before {
-    content: '\f205';
-}
-
-.social-profiles ul li.linkedin a {
-    background-color: #047cb1;
-}
-
-.social-profiles ul li.linkedin a:before {
-    content: '\f207';
-}
-
-.social-profiles ul li.pinterest a {
-    background-color: #cc2026;
-}
-
-.social-profiles ul li.pinterest a:before {
-    content: '\f209';
-}
-
-.social-profiles ul li.flickr a {
-    background-color: #000;
-}
-
-.social-profiles ul li.flickr a:before {
-    content: '\f211';
-}
-
-.social-profiles ul li.vimeo a {
-    background-color: #1ab7ea;
-}
-
-.social-profiles ul li.vimeo a:before {
-    content: '\f212';
-}
-
-.social-profiles ul li.you-tube a {
-    background-color: #cd201f;
-}
-
-.social-profiles ul li.you-tube a:before {
-    content: '\f213';
-}
-
-.social-profiles ul li.tumblr a {
-    background-color: #35465c;
-}
-
-.social-profiles ul li.tumblr a:before {
-    content: '\f214';
+    content: '\f09a';
 }
 
 .social-profiles ul li.instagram a {
@@ -899,23 +827,7 @@ a.more-link:hover {
 }
 
 .social-profiles ul li.instagram a:before {
-    content: '\f215';
-}
-
-.social-profiles ul li.codepen a {
-    background-color: #000;
-}
-
-.social-profiles ul li.codepen a:before {
-    content: '\f216';
-}
-
-.social-profiles ul li.polldaddy a {
-    background-color: #d45042;
-}
-
-.social-profiles ul li.polldaddy a:before {
-    content: '\f217';
+    content: '\f16d';
 }
 
 .social-profiles ul li.google-plus a {
@@ -923,63 +835,7 @@ a.more-link:hover {
 }
 
 .social-profiles ul li.google-plus a:before {
-    content: '\f218';
-}
-
-.social-profiles ul li.path a {
-    background-color: #ee3423;
-}
-
-.social-profiles ul li.path a:before {
-    content: '\f219';
-}
-
-.social-profiles ul li.skype a {
-    background-color: #009fe3;
-}
-
-.social-profiles ul li.skype a:before {
-    content: '\f220';
-}
-
-.social-profiles ul li.digg a {
-    background-color: #1b5891;
-}
-
-.social-profiles ul li.digg a:before {
-    content: '\f221';
-}
-
-.social-profiles ul li.reddit a {
-    background-color: #a6c8e9;
-}
-
-.social-profiles ul li.reddit a:before {
-    content: '\f222';
-}
-
-.social-profiles ul li.stumbleupon a {
-    background-color: #ea4b24;
-}
-
-.social-profiles ul li.stumbleupon a:before {
-    content: '\f223';
-}
-
-.social-profiles ul li.pocket a {
-    background-color: #eb1d37;
-}
-
-.social-profiles ul li.pocket a:before {
-    content: '\f224';
-}
-
-.social-profiles ul li.dropbox a {
-    background-color: #007ee5;
-}
-
-.social-profiles ul li.dropbox a:before {
-    content: '\f225';
+    content: '\f0d5';
 }
 
 .social-profiles ul li.rss a {
@@ -987,7 +843,7 @@ a.more-link:hover {
 }
 
 .social-profiles ul li.rss a:before {
-    content: '\f413';
+    content: '\f09e';
 }
 
 /* Header Image */
@@ -1236,7 +1092,7 @@ a.more-link:hover {
 }
 
 .search-toggle:before {
-    content: '\f400';
+    content: '\f002';
 }
 
 #search-box {
@@ -1498,15 +1354,15 @@ a.more-link:hover {
 }
 
 .entry-meta .by-author a:before {
-    content: '\f304';
+    content: '\f007';
 }
 
 .entry-meta .date a:before {
-    content: '\f303';
+    content: '\f017';
 }
 
 .entry-meta .comments a:before {
-    content: '\f108';
+    content: '\f086';
 }
 
 footer.entry-meta {
