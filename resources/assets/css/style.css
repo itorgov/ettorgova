@@ -631,7 +631,7 @@ a.more-link:hover {
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
     line-height: 40px;
-    font-family: 'Genericons';
+    font-family: 'FontAwesome';
     background-color: #555;
     text-align: center;
     -webkit-border-radius: 3px;
@@ -690,7 +690,7 @@ a.more-link:hover {
     height: 16px;
     font-size: 16px;
     line-height: 16px;
-    font-family: 'Genericons';
+    font-family: 'FontAwesome';
     vertical-align: top;
 }
 
@@ -778,7 +778,7 @@ a.more-link:hover {
     width: 24px;
     height: 24px;
     color: #fff;
-    font-family: 'Genericons';
+    font-family: 'FontAwesome';
     font-size: 16px;
     line-height: 25px;
     text-align: center;
@@ -1221,7 +1221,7 @@ a.more-link:hover {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 18px;
-    font-family: 'Genericons';
+    font-family: 'FontAwesome';
     cursor: pointer;
     margin-top: 39px;
     width: 18px;
@@ -1493,7 +1493,7 @@ a.more-link:hover {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
-    font-family: 'Genericons';
+    font-family: 'FontAwesome';
     vertical-align: top;
 }
 
