@@ -822,6 +822,14 @@ a.more-link:hover {
     content: '\f202';
 }
 
+.social-profiles ul li.vk a {
+    background-color: #45668e;
+}
+
+.social-profiles ul li.vk a:before {
+    content: '\f189';
+}
+
 .social-profiles ul li.facebook a {
     background-color: #3c5a99;
 }

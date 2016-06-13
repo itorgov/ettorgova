@@ -14,7 +14,8 @@ elixir(function(mix) {
         'jquery.cycle.all.min.js',
         'interface-slider-setting.js',
         'backtotop.js',
+        'metrika.js',
         'scripts.js'
     ]);
-    mix.copy('resources/assets/font', 'public/font');
+    mix.copy('resources/assets/fonts', 'public/fonts');
 });

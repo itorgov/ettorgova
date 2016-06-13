@@ -35,10 +35,10 @@
                                    href="mailto:jurist@ettorgova.ru">jurist@ettorgova.ru</a>
                             </li>
                             <li class="address">
-                                <a title="Нажмите, чтобы посмотреть на карте от Яндекс."
-                                   href="https://yandex.ru/maps/-/CVHsFSmB"
+                                <a title="Нажмите, чтобы посмотреть на карте от Google."
+                                   href="https://www.google.ru/maps/place/%D0%AE%D1%80%D0%B8%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F+%22%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0+%D0%B8+%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D1%8B%22/@56.2796842,43.9210916,15.75z/data=!4m5!3m4!1s0x0000000000000000:0x974a0c26c216f399!8m2!3d56.2791434!4d43.9224038"
                                    target="_blank"
-                                   rel="nofollow">
+                                   onclick="yaCounter34003970.reachGoal('click_on_google_map'); return true;">
                                     Нижний Новгород, проспект Ленина, 51 (с.м. Двигатель Революции)
                                 </a>
                             </li>
@@ -46,15 +46,24 @@
                     </div>
                     <div class="social-profiles clearfix">
                         <ul>
-                            <li class="facebook">
+                            <li class="vk">
                                 <a href="https://vk.com/ettorgova"
-                                   title="ЮК Торгова и партнёры в VK"
+                                   title="ЮК Торгова и партнёры в Вконтакте"
+                                   onclick="yaCounter34003970.reachGoal('vk_social_button'); return true;"
+                                   target="_blank">
+                                </a>
+                            </li>
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/ettorgova"
+                                   title="ЮК Торгова и партнёры в Facebook"
+                                   onclick="yaCounter34003970.reachGoal('facebook_social_button'); return true;"
                                    target="_blank">
                                 </a>
                             </li>
                             <li class="twitter">
                                 <a href="https://twitter.com/ettorgova"
                                    title="ЮК Торгова и партнёры в Twitter"
+                                   onclick="yaCounter34003970.reachGoal('twitter_social_button'); return true;"
                                    target="_blank">
                                 </a>
                             </li>
@@ -189,10 +198,11 @@
 
                         <div class="one-third">
                             <aside id="text-9" class="widget widget_text">
-                                <h2 class="widget-title">О компани</h2>
+                                <h2 class="widget-title">О компании</h2>
 
                                 <div class="textwidget">
-                                    ЮК "Торгова и партнёры" - молодая и активно развивающаяся компания. Непрерывное
+                                    Юридическая компания "Торгова и партнёры" - профессиональная и современная
+                                    юридическая компания. Непрерывное
                                     отслеживание нововведений в области права позволяет нам заранее предугадывать ходы
                                     для
                                     решения ваших вопросов.<br/>Мы оказываем юридические услуги гражданам и юридическим
@@ -244,10 +254,10 @@
                                    href="mailto:jurist@ettorgova.ru">jurist@ettorgova.ru</a>
                             </li>
                             <li class="address">
-                                <a title="Нажмите, чтобы посмотреть на карте от Яндекс."
-                                   href="https://yandex.ru/maps/-/CVHsFSmB"
+                                <a title="Нажмите, чтобы посмотреть на карте от Google."
+                                   href="https://www.google.ru/maps/place/%D0%AE%D1%80%D0%B8%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F+%22%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0+%D0%B8+%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D1%8B%22/@56.2796842,43.9210916,15.75z/data=!4m5!3m4!1s0x0000000000000000:0x974a0c26c216f399!8m2!3d56.2791434!4d43.9224038"
                                    target="_blank"
-                                   rel="nofollow">
+                                   onclick="yaCounter34003970.reachGoal('click_on_google_map'); return true;">
                                     Нижний Новгород, проспект Ленина, 51 (с.м. Двигатель Революции)
                                 </a>
                             </li>
@@ -260,15 +270,24 @@
                 <div class="container clearfix">
                     <div class="social-profiles clearfix">
                         <ul>
-                            <li class="facebook">
+                            <li class="vk">
                                 <a href="https://vk.com/ettorgova"
-                                   title="ЮК Торгова и партнёры в VK"
+                                   title="ЮК Торгова и партнёры в Вконтакте"
+                                   onclick="yaCounter34003970.reachGoal('vk_social_button'); return true;"
+                                   target="_blank">
+                                </a>
+                            </li>
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/ettorgova"
+                                   title="ЮК Торгова и партнёры в Facebook"
+                                   onclick="yaCounter34003970.reachGoal('facebook_social_button'); return true;"
                                    target="_blank">
                                 </a>
                             </li>
                             <li class="twitter">
                                 <a href="https://twitter.com/ettorgova"
                                    title="ЮК Торгова и партнёры в Twitter"
+                                   onclick="yaCounter34003970.reachGoal('twitter_social_button'); return true;"
                                    target="_blank">
                                 </a>
                             </li>
@@ -293,34 +312,13 @@
         </footer>
     </div>
     @if (App::environment('production'))
-            <!-- Yandex.Metrika counter -->
-    <script type="text/javascript"> (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter34003970 = new Ya.Metrika({
-                        id: 34003970,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true
-                    });
-                } catch (e) {
-                }
-            });
-            var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
-                n.parentNode.insertBefore(s, n);
-            };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-                f();
-            }
-        })(document, window, "yandex_metrika_callbacks"); </script>
+    <!-- Yandex.Metrika counter -->
     <noscript>
-        <div><img src="https://mc.yandex.ru/watch/34003970" style="position:absolute; left:-9999px;" alt=""/></div>
-    </noscript> <!-- /Yandex.Metrika counter -->
+        <div>
+            <img src="https://mc.yandex.ru/watch/34003970" style="position:absolute; left:-9999px;" alt=""/>
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
     @endif
     </body>
 @endsection
