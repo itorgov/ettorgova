@@ -185,9 +185,9 @@
 		-moz-osx-font-smoothing: grayscale;
 		font-size: 25px;
 		line-height: 0;
-		font-family: 'Genericons';
+		font-family: 'FontAwesome';
 		vertical-align: top;
-		content: '\f419';
+		content: '\f0c9';
 	}
 	.hgroup-right {
 		clear: both;
