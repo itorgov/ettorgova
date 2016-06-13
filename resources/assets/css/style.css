@@ -680,7 +680,7 @@ a.more-link:hover {
 }
 
 .info-bar .info ul li:before {
-    margin-top: 3px;
+    margin-top: 2px;
     margin-right: 5px;
     color: #63C6AE;
     -webkit-font-smoothing: antialiased;
@@ -1341,7 +1341,6 @@ a.more-link:hover {
 .entry-meta .by-author a:before,
 .entry-meta .date a:before,
 .entry-meta .comments a:before {
-    line-height: 22px;
     margin-right: 3px;
     display: inline-block;
     width: 16px;
