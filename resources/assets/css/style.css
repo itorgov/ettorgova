@@ -160,35 +160,35 @@ h6 {
 
 /* No Border/Margin/Padding */
 .no-margin-top {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
 }
 
 .no-margin-bottom {
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
 }
 
 .no-margin-left {
-    margin-left: 0px !important;
+    margin-left: 0 !important;
 }
 
 .no-margin-right {
-    margin-right: 0px !important;
+    margin-right: 0 !important;
 }
 
 .no-padding-top {
-    padding-top: 0px !important;
+    padding-top: 0 !important;
 }
 
 .no-padding-bottom {
-    padding-bottom: 0px !important;
+    padding-bottom: 0 !important;
 }
 
 .no-padding-left {
-    padding-left: 0px !important;
+    padding-left: 0 !important;
 }
 
 .no-padding-right {
-    padding-right: 0px !important;
+    padding-right: 0 !important;
 }
 
 .no-border-top {
@@ -390,7 +390,7 @@ input[type="submit"] {
     display: block;
     text-align: center;
     height: 40px;
-    padding: 0px 20px;
+    padding: 0 20px;
     margin-top: 5px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -548,7 +548,6 @@ img#wpstats {
 a.readmore {
     color: #fff;
     display: inline-block;
-    padding: 5px 25px 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -1810,7 +1809,6 @@ a.comment-reply-link {
 label ~ span.required {
     display: block;
     float: left;
-    margin: -18px 0 0 -16px;
     margin: -1.285714286rem 0 0 -1.142857143rem;
 }
 
@@ -1962,19 +1960,18 @@ ul.default-wp-page li a:hover {
 
 #bbpress-forums #bbp-search-form #bbp_search {
     width: 70%;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     border-right: 0 none;
 }
 
 #bbpress-forums #bbp-search-form #bbp_search_submit {
     padding: 0 3%;
     height: 42px;
-    margin-left: -4px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     border-right: 0 none;
     display: inline-block;
     margin: 0 0 0 -3px;
@@ -2007,7 +2004,7 @@ div.bbp-search-form button {
     display: block;
     text-align: center;
     height: 40px;
-    padding: 0px 20px;
+    padding: 0 20px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -2116,7 +2113,7 @@ div.bbp-search-form button {
 }
 
 .widget_article .article-content p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 /* Recent Entries/Comments widget */
@@ -2435,7 +2432,7 @@ div.bbp-search-form button {
 
 /* Site Generator */
 #site-generator {
-    padding: 30px 0px;
+    padding: 30px 0;
     color: #666;
     background-color: #1a1a1a;
 }

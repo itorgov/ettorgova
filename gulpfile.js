@@ -9,10 +9,7 @@ elixir(function(mix) {
         'responsive.css'
     ]);
     mix.scripts([
-        'jquery.js',
-        'jquery-migrate.min.js',
-        'jquery.cycle.all.min.js',
-        'interface-slider-setting.js',
+        'jquery.min.js',
         'backtotop.js',
         'metrika.js',
         'scripts.js'

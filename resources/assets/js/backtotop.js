@@ -1,5 +1,4 @@
 jQuery(document).ready(function () {
-
     // hide #back-top first
     jQuery(".back-to-top").hide();
 
@@ -21,5 +20,4 @@ jQuery(document).ready(function () {
             return false;
         });
     });
-
 });

@@ -19,6 +19,7 @@ jQuery(function () {
     jQuery('.menu-toggle').on('click', function () {
         nav.toggleClass('toggled-on');
     });
+
     // Search toggle.
     jQuery('.search-toggle').on('click', function (event) {
         var that = jQuery(this),
@@ -31,6 +32,7 @@ jQuery(function () {
             wrapper.find('.s').focus();
         }
     });
+
     jQuery('body').on('click', function (event) {
         var searchButton = jQuery('.search-toggle');
         var searchBox = jQuery('#search-box');

@@ -26,17 +26,6 @@
                     </a>
                 </figure>
             </div>
-            {{--<div class="slides displaynone">--}}
-            {{--<figure>--}}
-            {{--<a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>--}}
-            {{--<img width="1440" height="500"--}}
-            {{--src="{{ url(config('app.staticUrl') . '/files/featured-img-41.jpg') }}"--}}
-            {{--class="pngfix wp-post-image"--}}
-            {{--alt='Юридическая компания "Торгова и партнёры"'--}}
-            {{--title='Юридическая компания "Торгова и партнёры"'>--}}
-            {{--</a>--}}
-            {{--</figure>--}}
-            {{--</div>--}}
         </div>
         <nav id="controllers" class="clearfix">
         </nav>
@@ -219,7 +208,7 @@
                         <div class="one-fourth">
                             <a title="Выигранные суды (судебная практика)" href="#">
                                 <img width="474" height="342"
-                                     src="{{ url(config('app.staticUrl') . '/files/vyigrannye-sudy-sudebnaya-praktika.png') }}"
+                                     src="{{ url(config('app.staticUrl') . '/files/vyigrannye-sudy-sudebnaya-praktika.jpg') }}"
                                      alt="Судебная практика">
                             </a>
 
@@ -234,7 +223,7 @@
                         <div class="one-fourth clearfix-half">
                             <a title="Новое в российском законодательстве" href="#">
                                 <img width="474" height="342"
-                                     src="{{ url(config('app.staticUrl') . '/files/novoe-v-rossijskom-zakonodatelstve.png') }}"
+                                     src="{{ url(config('app.staticUrl') . '/files/novoe-v-rossijskom-zakonodatelstve.jpg') }}"
                                      alt="Новое в российском законодательстве">
                             </a>
 
@@ -249,7 +238,7 @@
                         <div class="one-fourth">
                             <a title="Задать вопрос нашему юристу" href="#">
                                 <img width="474" height="342"
-                                     src="{{ url(config('app.staticUrl') . '/files/zadat-vopros-yuristu.png') }}"
+                                     src="{{ url(config('app.staticUrl') . '/files/zadat-vopros-yuristu.jpg') }}"
                                      alt="Задать вопрос юристу">
                             </a>
 
