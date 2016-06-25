@@ -758,7 +758,7 @@ a.more-link:hover {
 .hgroup-right {
     float: right;
     position: relative;
-    padding-right: 35px;
+    padding-right: 0;
 }
 
 /* Social Profiles */

@@ -11,12 +11,16 @@
 
 @section('css')
     @parent
-    <link rel='stylesheet' href='{{ url(config('app.staticUrl') . '/css/all.css') }}' type='text/css' media='all'>
+    <link rel="stylesheet" href="{{ url(config('app.staticUrl') . '/css/all.css') }}" type="text/css" media="all">
 @endsection
 
 @section('js')
     @parent
-    <script type='text/javascript' src='{{ url(config('app.staticUrl') . '/js/all.js') }}'></script>
+    <script type="text/javascript">
+        // Picture element HTML5 shiv.
+        document.createElement("picture");
+    </script>
+    <script type="text/javascript" async src="{{ url(config('app.staticUrl') . '/js/all.js') }}"></script>
 @endsection
 
 @section('body')
@@ -150,16 +154,6 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="search-toggle"></div>
-                        <div id="search-box" class="hide">
-                            <form action="/" method="get"
-                                  class="searchform clearfix">
-                                <label class="assistive-text">Поиск</label>
-                                <input type="search" placeholder="Введите для поиска..." class="s field" name="s">
-                                <input type="submit" value="Искать" class="search-submit">
-                            </form>
-                            <span class="arrow"></span>
-                        </div>
                     </section>
                 </div>
             </div>
@@ -308,17 +302,17 @@
                     </div>
                 </div>
             </div>
-            <div class="back-to-top"><a href="#branding"> </a></div>
+            <div class="back-to-top"><a href="#branding"></a></div>
         </footer>
     </div>
     @if (App::environment('production'))
-    <!-- Yandex.Metrika counter -->
-    <noscript>
-        <div>
-            <img src="https://mc.yandex.ru/watch/34003970" style="position:absolute; left:-9999px;" alt=""/>
-        </div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
+        <!-- Yandex.Metrika counter -->
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/34003970" style="position:absolute; left:-9999px;" alt=""/>
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
     @endif
     </body>
 @endsection

@@ -10,6 +10,7 @@ elixir(function(mix) {
     ]);
     mix.scripts([
         'jquery.min.js',
+        'picturefill.min.js',
         'backtotop.js',
         'metrika.js',
         'scripts.js'

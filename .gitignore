@@ -3,7 +3,7 @@
 /.idea
 /public/css
 /public/js
-/public/font
+/public/fonts
 Homestead.yaml
 Homestead.json
 .env
