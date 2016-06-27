@@ -16,10 +16,6 @@
 
 @section('js')
     @parent
-    <script type="text/javascript">
-        // Picture element HTML5 shiv.
-        document.createElement("picture");
-    </script>
     <script type="text/javascript" async src="{{ url(config('app.staticUrl') . '/js/all.js') }}"></script>
 @endsection
 
@@ -32,14 +28,18 @@
                     <div class="info clearfix">
                         <ul>
                             <li class="phone-number">
-                                <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">288-91-28</a>
+                                <a title="Нажмите, чтобы позвонить нам."
+                                   href="tel:+78312889128"
+                                   onclick="yaCounter34003970.reachGoal('make_call_to_ip_phone'); return true;">
+                                    288-91-28
+                                </a>
                             </li>
                             <li class="email">
-                                <a title="Нажмите, чтобы написать нам."
+                                <a title="Нажмите, чтобы написать нам на электронную почту."
                                    href="mailto:jurist@ettorgova.ru">jurist@ettorgova.ru</a>
                             </li>
                             <li class="address">
-                                <a title="Нажмите, чтобы посмотреть на карте от Google."
+                                <a title="Нажмите, чтобы посмотреть адрес на карте от Google."
                                    href="https://www.google.ru/maps/place/%D0%AE%D1%80%D0%B8%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F+%22%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0+%D0%B8+%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D1%8B%22/@56.2796842,43.9210916,15.75z/data=!4m5!3m4!1s0x0000000000000000:0x974a0c26c216f399!8m2!3d56.2791434!4d43.9224038"
                                    target="_blank"
                                    onclick="yaCounter34003970.reachGoal('click_on_google_map'); return true;">
@@ -215,21 +215,36 @@
 
                                 <div class="textwidget">
                                     <p>Юридическая компания <strong>"Торгова и партнёры"</strong><br>
-                                        Нижний Новгород, проспект Ленина, 51, офис 3 (возле станции метро Двигатель
-                                        Революции)
+                                        603135, Нижний Новгород, проспект Ленина, 51, офис 3 (возле станции метро "Двигатель
+                                        Революции")
                                     </p>
 
-                                    <p>Телефон: <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">
-                                            8 (831) 288-91-28</a>
+                                    <p>Телефон:
+                                        <a title="Нажмите, чтобы позвонить нам."
+                                           href="tel:+78312889128"
+                                           onclick="yaCounter34003970.reachGoal('make_call_to_ip_phone'); return true;">
+                                            8 (831) 288-91-28
+                                        </a>
                                         <br>
-                                        Мобильный телефон: <a title="Нажмите, чтобы позвонить нам."
-                                                              href="tel:+79990790781">
-                                            +7 (999) 079-078-1</a>
+                                        Мобильный телефон:
+                                        <a title="Нажмите, чтобы позвонить нам."
+                                           href="tel:+79990790781"
+                                           onclick="yaCounter34003970.reachGoal('make_call_to_mobile_phone'); return true;">
+                                            +7 (999) 079-078-1
+                                        </a>
                                         <br>
-                                        Email: <a href="mailto:jurist@ettorgova.ru"
-                                                  title="Написать нам">jurist@ettorgova.ru</a><br>
-                                        Сайт: <a href="{{ route('site.index') }}" target="_blank"
-                                                 title="Посетить наш сайт">ettorgova.ru</a></p>
+                                        Email:
+                                        <a href="mailto:jurist@ettorgova.ru"
+                                           title="Нажмите, чтобы написать нам на электронную почту.">
+                                            jurist@ettorgova.ru
+                                        </a>
+                                        <br>
+                                        Сайт:
+                                        <a href="{{ route('site.index') }}" target="_blank"
+                                           title="Посетить наш сайт">
+                                            ettorgova.ru
+                                        </a>
+                                    </p>
                                 </div>
                             </aside>
                         </div>
@@ -241,14 +256,18 @@
                     <div class="info clearfix">
                         <ul>
                             <li class="phone-number">
-                                <a title="Нажмите, чтобы позвонить нам." href="tel:+78312889128">288-91-28</a>
+                                <a title="Нажмите, чтобы позвонить нам."
+                                   href="tel:+78312889128"
+                                   onclick="yaCounter34003970.reachGoal('make_call_to_ip_phone'); return true;">
+                                    288-91-28
+                                </a>
                             </li>
                             <li class="email">
-                                <a title="Нажмите, чтобы написать нам."
+                                <a title="Нажмите, чтобы написать нам на электронную почту."
                                    href="mailto:jurist@ettorgova.ru">jurist@ettorgova.ru</a>
                             </li>
                             <li class="address">
-                                <a title="Нажмите, чтобы посмотреть на карте от Google."
+                                <a title="Нажмите, чтобы посмотреть адрес на карте от Google."
                                    href="https://www.google.ru/maps/place/%D0%AE%D1%80%D0%B8%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F+%22%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0+%D0%B8+%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D1%8B%22/@56.2796842,43.9210916,15.75z/data=!4m5!3m4!1s0x0000000000000000:0x974a0c26c216f399!8m2!3d56.2791434!4d43.9224038"
                                    target="_blank"
                                    onclick="yaCounter34003970.reachGoal('click_on_google_map'); return true;">
