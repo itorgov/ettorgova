@@ -1265,7 +1265,7 @@ a.more-link:hover {
     margin-top: -1px;
 }
 
-.page-title {
+.page-title-wrap h1 {
     font-size: 22px;
     line-height: 29px;
     color: #fff;
@@ -1274,35 +1274,39 @@ a.more-link:hover {
     padding-top: 2px;
 }
 
-.page-title a {
-    color: #fff;
-}
-
 /* Entry Header */
 .entry-header {
     padding-bottom: 10px;
 }
 
-/* Entry Title */
-#content .entry-title {
+.entry-header h1 {
     padding-bottom: 5px;
-}
-
-.entry-title {
     font-size: 22px;
     font-weight: normal;
     text-transform: none;
     line-height: 29px;
 }
 
-.entry-title,
-.entry-title a {
+/* Entry Title */
+#content h2.entry-title {
+    padding-bottom: 5px;
+}
+
+h2.entry-title {
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 29px;
+}
+
+h2.entry-title,
+h2.entry-title a {
     color: #333;
 }
 
-.entry-title a:hover,
-.entry-title a:focus,
-.entry-title a:active {
+h2.entry-title a:hover,
+h2.entry-title a:focus,
+h2.entry-title a:active {
     color: #63C6AE;
 }
 

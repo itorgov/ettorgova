@@ -19,7 +19,7 @@
                     <span>Юридическое консультирование</span>
                 </span>
             </div>
-            <h1 class="page-title" id="entry-title">Юридическое консультирование</h1>
+            <h1>Юридическое консультирование</h1>
         </div>
     </div>
 @endsection

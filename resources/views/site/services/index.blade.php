@@ -16,7 +16,7 @@
                     <span>Услуги</span>
                 </span>
             </div>
-            <h1 class="page-title" id="entry-title">Наши услуги</h1>
+            <h1>Наши услуги</h1>
         </div>
     </div>
 @endsection
@@ -56,7 +56,7 @@
                             <h2 class="entry-title">
                                 <a href="{{ route('uslugi', ['name' => 'registraciya-predprinimatelej']) }}"
                                    title="Регистрация индивидуального предпринимателя (ИП)">
-                                    Регистрация индивидуального предпринимателя (ИП)
+                                    Регистрация ИП
                                 </a>
                             </h2>
                         </header>
@@ -83,7 +83,7 @@
                             <h2 class="entry-title">
                                 <a href="{{ route('uslugi', ['name' => 'registraciya-organizacij']) }}"
                                    title="Регистрация общества с ограниченной ответственностью (ООО)">
-                                    Регистрация общества с ограниченной ответственностью (ООО)
+                                    Регистрация ООО
                                 </a>
                             </h2>
                         </header>

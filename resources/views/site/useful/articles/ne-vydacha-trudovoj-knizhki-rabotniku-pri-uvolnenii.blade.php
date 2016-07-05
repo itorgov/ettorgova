@@ -13,7 +13,7 @@
                     <a title="Главная страница" href="{{ route('site.index') }}">Главная страница</a>
                 </span> /
                 <span>
-                    <a title="Статьи" href="{{ route('stati') }}">Статьи</a>
+                    <a title="Статьи" href="{{ route('stati') }}">Статьи, которые мы пишем</a>
                 </span> /
                 <span>
                     <span>Не выдача трудовой книжки работнику при увольнении по его инициативе</span>
@@ -30,7 +30,7 @@
                 <section>
                     <article style="text-align: justify">
                         <header class="entry-header">
-                            <h2 class="entry-title">Не выдача трудовой книжки работнику при увольнении по его инициативе</h2>
+                            <h1>Не выдача трудовой книжки работнику при увольнении по его инициативе</h1>
                             <div class="entry-meta clearfix">
                                 <div class="by-author vcard author">
                                     <span class="fn">
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                         </header>
-                        <div class="entry-content clearfix">
+                        <div class="entry-content">
                             <p>
                                 Может ли случиться ситуация, когда работодатель отказывается выдать трудовую книжку
                                 работнику?

@@ -77,12 +77,12 @@
             </div>
             <div class="hgroup-wrap">
                 <div class="container clearfix">
-                    <section id="site-logo" class="clearfix">
-                        <h1 id="site-title">
-                            <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнеры"'>
-                                ЮК "Торгова и партнеры"
+                    <section id="site-logo">
+                        <span id="site-title">
+                            <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
+                                ЮК "Торгова и партнёры"
                             </a>
-                        </h1>
+                        </span>
                     </section>
                     <button class="menu-toggle">Меню</button>
                     <section class="hgroup-right">
@@ -101,12 +101,12 @@
                                         </li>
                                         <li class="{{ $routeHelper->checkActiveMenuItem('registraciya-predprinimatelej', 'current-menu-item', 1) }}">
                                             <a href="{{ route('uslugi', ['name' => 'registraciya-predprinimatelej']) }}">
-                                                Регистрация предпринимателей
+                                                Регистрация ИП
                                             </a>
                                         </li>
                                         <li class="{{ $routeHelper->checkActiveMenuItem('registraciya-organizacij', 'current-menu-item', 1) }}">
                                             <a href="{{ route('uslugi', ['name' => 'registraciya-organizacij']) }}">
-                                                Регистрация организаций
+                                                Регистрация ООО
                                             </a>
                                         </li>
                                         <li class="{{ $routeHelper->checkActiveMenuItem('yuridicheskoe-soprovozhdenie-biznesa', 'current-menu-item', 1) }}">

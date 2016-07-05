@@ -8,7 +8,7 @@
 @section('js')
     @parent
     <script type="text/javascript" charset="utf-8"
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3tv74VP_LS9oBz-KnRdKrwAyXNn4qCAo&width=100%&height=450&lang=ru_RU&sourceType=constructor&id=map"></script>
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3tv74VP_LS9oBz-KnRdKrwAyXNn4qCAo&width=100%&height=450&lang=ru_RU&sourceType=constructor&id=map&class=fdd"></script>
 @endsection
 
 @section('header')
@@ -22,7 +22,7 @@
                     <span>Контакты</span>
                 </span>
             </div>
-            <h1 class="page-title" id="entry-title">Контакты</h1>
+            <h1>Контакты</h1>
         </div>
     </div>
 @endsection
@@ -57,7 +57,7 @@
                         </p>
                     </div>
                 </section>
-                <section>
+                <section class="contacts-map">
                     <div class="entry-content" id="map"></div>
                 </section>
             </div>

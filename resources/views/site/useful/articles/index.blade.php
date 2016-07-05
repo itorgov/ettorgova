@@ -13,10 +13,10 @@
                     <a title="Главная страница" href="{{ route('site.index') }}" class="home">Главная страница</a>
                 </span> /
                 <span>
-                    <span>Статьи</span>
+                    <span>Статьи, которые мы пишем</span>
                 </span>
             </div>
-            <h1 class="page-title" id="entry-title">Статьи, которые мы пишем</h1>
+            <h1>Статьи, которые мы пишем</h1>
         </div>
     </div>
 @endsection

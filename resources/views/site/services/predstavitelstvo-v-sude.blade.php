@@ -19,7 +19,7 @@
                     <span>Представительство в суде</span>
                 </span>
             </div>
-            <h1 class="page-title" id="entry-title">Представительство в суде</h1>
+            <h1>Представительство в суде</h1>
         </div>
     </div>
 @endsection
