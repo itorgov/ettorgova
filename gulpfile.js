@@ -10,9 +10,11 @@ elixir(function(mix) {
     ]);
     mix.scripts([
         'jquery.min.js',
+        'jquery.maskedinput.js',
         'backtotop.js',
         'metrika.js',
-        'scripts.js'
+        'scripts.js',
+        'lead-form.js'
     ]);
     mix.copy('resources/assets/fonts', 'public/fonts');
 });

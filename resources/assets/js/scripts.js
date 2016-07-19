@@ -39,8 +39,7 @@ jQuery(function () {
 
         if (event.target !== searchButton[0] &&
             event.target !== searchBox[0] &&
-            jQuery(event.target).parents('div#search-box')[0] !== searchBox[0] &&
-            !searchBox.is('.hide')
+            jQuery(event.target).parents('div#search-box')[0] !== searchBox[0] && !searchBox.is('.hide')
         ) {
             searchBox.toggleClass('hide');
         }

@@ -16,3 +16,5 @@ Route::get('useful/stati/{name?}', [
     'as' => 'stati',
     'uses' => 'SiteController@stati'
 ]);
+
+Route::resource('client', 'ClientController', ['only' => ['store']]);
