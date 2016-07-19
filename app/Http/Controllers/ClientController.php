@@ -38,12 +38,8 @@ class ClientController extends Controller
     public function store(StoreClientRequest $request)
     {
         $client = Client::firstOrNew(['phone' => $request->phone]);
-
-        // У существующего клиента перезаписывать имя можно до тех пор, пока его не подтвердит администратор.
-        if (!$client->confirmed) {
-            $client->name = $request->name;
-        }
-
+        $client->name = $request->name;
+        $client->description = $request->description;
         $client->save();
 
         $this->dispatch(new SendTelegramLeadFormMessage($client));

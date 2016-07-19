@@ -80,8 +80,9 @@
                                     документов.</i>
                             </p>
 
-                            <a href="#lead-form" class="get-service-button">
-                                <input type="button" value="Заказать услугу" />
+                            <a href="#lead-form" class="get-service-button" title="Заказать услугу"
+                               data-description="Анализ пакета документов для проведения сделки с жилыми помещениями и сопровождение клиента при заключении сделки">
+                                <input type="button" value="Заказать услугу"/>
                             </a>
 
                             <hr>
@@ -114,8 +115,9 @@
                                 <i>В стоимость услуги не входит составление договоров и других документов.</i>
                             </p>
 
-                            <a href="#lead-form" class="get-service-button">
-                                <input type="button" value="Заказать услугу" />
+                            <a href="#lead-form" class="get-service-button" title="Заказать услугу"
+                               data-description="Анализ пакета документов для проведения сделки с нежилыми помещениями и сопровождение клиента при заключении сделки">
+                                <input type="button" value="Заказать услугу"/>
                             </a>
 
                             <hr>
@@ -149,8 +151,9 @@
                                 </li>
                             </ul>
 
-                            <a href="#lead-form" class="get-service-button">
-                                <input type="button" value="Заказать услугу" />
+                            <a href="#lead-form" class="get-service-button" title="Заказать услугу"
+                               data-description="Полное сопровождение сделки с недвижимостью">
+                                <input type="button" value="Заказать услугу"/>
                             </a>
 
                             <hr>
@@ -182,8 +185,9 @@
                                 </li>
                             </ul>
 
-                            <a href="#lead-form" class="get-service-button">
-                                <input type="button" value="Заказать услугу" />
+                            <a href="#lead-form" class="get-service-button" title="Заказать услугу"
+                               data-description="Приватизация во внесудебном порядке">
+                                <input type="button" value="Заказать услугу"/>
                             </a>
 
                             <hr>
@@ -229,8 +233,9 @@
                                 <li>стоимость работ по подготовке проекта переустройства (перепланировки) квартиры.</li>
                             </ul>
 
-                            <a href="#lead-form" class="get-service-button">
-                                <input type="button" value="Заказать услугу" />
+                            <a href="#lead-form" class="get-service-button" title="Заказать услугу"
+                               data-description="Согласование переустройства (перепланировки) квартиры во внесудебном порядке">
+                                <input type="button" value="Заказать услугу"/>
                             </a>
 
                             <hr>
@@ -238,6 +243,7 @@
                             <div class="lead-form">
                                 <form method="POST" action="{{ route('client.store') }}" id="lead-form">
                                     {{ csrf_field() }}
+                                    <input type="hidden" name="description" id="description" value="Сопровождение сделок с недвижимостью">
 
                                     <div class="form-group" id="lead-form-name-block">
                                         <label for="name">Имя</label>
@@ -247,14 +253,19 @@
 
                                     <div class="form-group" id="lead-form-phone-block">
                                         <label for="phone">Номер телефона</label>
-                                        <input type="tel" name="phone" id="phone" placeholder="Введите ваш номер телефона.">
+                                        <input type="tel" name="phone" id="phone"
+                                               placeholder="Введите ваш номер телефона.">
                                         <span id="lead-form-phone-help" class="help-block"></span>
                                     </div>
 
-                                    <input type="submit" value="Заказать услугу">
+                                    <div class="form-group" id="lead-form-submit-block">
+                                        <input type="submit" value="Заказать услугу">
+                                        <span id="lead-form-submit-help" class="help-block"></span>
+                                    </div>
 
                                     <p>
-                                        Ваши контактные данные необходимы нам для того, чтобы мы смогли связаться с вами и записать вас к нашим юристам.
+                                        Ваши контактные данные необходимы нам для того, чтобы мы смогли связаться с вами
+                                        и записать вас к нашим юристам.
                                     </p>
 
                                 </form>
@@ -263,8 +274,10 @@
                             <div id="lead-form-modal">
                                 <span id="modal-close"><i aria-hidden="true"></i></span>
                                 <h2>Заявка отправлена</h2>
-                                <p><span></span>, ваша заявка успешно отправлена. В ближайшее время вам позвонит наш специалист для согласования времени встречи.</p>
-                                <p>Наши сотрудники работают с 10:00 до 19:00 часов (суббота и воскресение выходные дни).</p>
+                                <p><span></span>, ваша заявка успешно отправлена. В ближайшее время вам позвонит наш
+                                    специалист для согласования времени встречи.</p>
+                                <p>Наши сотрудники работают с 10:00 до 19:00 часов (суббота и воскресение выходные
+                                    дни).</p>
                             </div>
                             <div id="modal-overlay"></div>
                         </div>

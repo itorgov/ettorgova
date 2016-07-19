@@ -37,8 +37,9 @@ class SendTelegramLeadFormMessage extends Job implements ShouldQueue
         $currentDate = date('d.m.Y');
         $clientName = $this->client->name;
         $clientPhone = $this->client->phone;
+        $clientDescription = $this->client->description;
 
-        $messageText = "Новая заявка с нашего сайта.\n<b>Имя</b>: $clientName\n<b>Номер телефона</b>: $clientPhone\n<b>Дата</b>: $currentDate";
+        $messageText = "Новая заявка с нашего сайта.\n<b>Имя</b>: $clientName\n<b>Номер телефона</b>: $clientPhone\n<b>Услуга</b>: $clientDescription\n<b>Дата</b>: $currentDate";
 
         $telegram->sendMessage($messageText);
         $telegram->sendContact($clientPhone, $clientName);

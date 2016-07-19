@@ -15,8 +15,9 @@ class CreateClientsTable extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->increments('id')->comment('Идентификатор записи.');
             $table->string('name')->comment('Имя клиента.');
-            $table->string('phone', 18)->unique()->comment('Номер телефона клиента.');
+            $table->string('phone')->unique()->comment('Номер телефона клиента.');
             $table->boolean('confirmed')->default(0)->comment('Подтверждены ли контактные данные клиента.');
+            $table->text('description')->nullable()->comment('Любая дополнительная информация о клиенте.');
             $table->timestamps();
         });
     }
