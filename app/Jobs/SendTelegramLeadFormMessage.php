@@ -34,12 +34,13 @@ class SendTelegramLeadFormMessage extends Job implements ShouldQueue
      */
     public function handle(TelegramSender $telegram)
     {
-        $currentDate = date('d.m.Y H:i:s');
+        $currentDate = date('d.m.Y');
         $clientName = $this->client->name;
         $clientPhone = $this->client->phone;
 
         $messageText = "Новая заявка с нашего сайта.\n<b>Имя</b>: $clientName\n<b>Номер телефона</b>: $clientPhone\n<b>Дата</b>: $currentDate";
 
         $telegram->sendMessage($messageText);
+        $telegram->sendContact($clientPhone, $clientName);
     }
 }

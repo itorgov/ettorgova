@@ -7,6 +7,7 @@ use GuzzleHttp\Client as HttpClient;
 class TelegramSender
 {
     const METHOD_SEND_MESSAGE = 'sendMessage';
+    const METHOD_SEND_CONTACT = 'sendContact';
 
     const PARSE_MODE_HTML = 'HTML';
     const PARSE_MODE_MARKDOWN = 'Markdown';
@@ -20,21 +21,56 @@ class TelegramSender
         $this->chatId = env('TELEGRAM_CHAT_ID');
     }
 
-    public function sendMessage($text)
+    protected function makeRequest($method, $parameters)
     {
-        // Формирую запрос.
         $httpClient = new HttpClient([
             'base_uri' => $this->apiUrl
         ]);
 
-        $response = $httpClient->request('POST', self::METHOD_SEND_MESSAGE, [
-            'json' => [
-                'chat_id' => $this->chatId,
-                'text' => $text,
-                'parse_mode' => self::PARSE_MODE_HTML
-            ]
+        $response = $httpClient->request('POST', $method, [
+            'json' => $parameters
         ]);
 
-        return $response;
+        $bodyResponse = \GuzzleHttp\json_decode((string)$response->getBody());
+
+        return $bodyResponse;
+    }
+
+    /**
+     * Отправляет текстовое сообщение.
+     *
+     * @param string $text Текст сообщения.
+     * @return mixed
+     */
+    public function sendMessage($text)
+    {
+        return $this->makeRequest(self::METHOD_SEND_MESSAGE, [
+            'chat_id' => $this->chatId,
+            'text' => $text,
+            'parse_mode' => self::PARSE_MODE_HTML
+        ]);
+    }
+
+    /**
+     * Отправляет контакт.
+     *
+     * @param string $phoneNumber Номер телефона.
+     * @param string $firstName Имя.
+     * @param string|null $lastName Фамилия.
+     * @return mixed|\Psr\Http\Message\ResponseInterface
+     */
+    public function sendContact($phoneNumber, $firstName, $lastName = null)
+    {
+        $parameters = [
+            'chat_id' => $this->chatId,
+            'phone_number' => $phoneNumber,
+            'first_name' => $firstName
+        ];
+
+        if (!is_null($lastName)) {
+            $parameters['last_name'] = $lastName;
+        }
+
+        return $this->makeRequest(self::METHOD_SEND_CONTACT, $parameters);
     }
 }
