@@ -16,6 +16,10 @@ class SiteController extends Controller
 
     public function services($name = 'index')
     {
+        if ($newUrl = $this->getRedirectUrl()) {
+            return redirect($newUrl, 301);
+        }
+
         $viewName = 'site.services.' . $name;
 
         if (!view()->exists($viewName)) {
@@ -27,6 +31,10 @@ class SiteController extends Controller
 
     public function stati($name = 'index')
     {
+        if ($newUrl = $this->getRedirectUrl()) {
+            return redirect($newUrl, 301);
+        }
+
         $viewName = 'site.useful.articles.' . $name;
 
         if (!view()->exists($viewName)) {

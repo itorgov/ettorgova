@@ -1,9 +1,6 @@
 jQuery(function () {
 
     jQuery('input[type="tel"]').mask('+7 (999) 999-99-99');
-    jQuery('a[href="#lead-form"]').click(function () {
-        leadFormDescriptionInput.val(jQuery(this).data('description'));
-    });
 
     var leadForm = jQuery('#lead-form');
     var leadFormPhoneInput = jQuery('input[name="phone"]');
@@ -16,6 +13,7 @@ jQuery(function () {
     var leadFormDescriptionDefault = jQuery('h1').text();
     var leadFormSubmitBlock = jQuery('#lead-form-submit-block');
     var leadFormSubmitHelp = jQuery('#lead-form-submit-help');
+    var leadFormGetServiceButtons = jQuery('input[type="button"].get-service-button');
 
     var leadFormModal = jQuery('#lead-form-modal');
     var leadFormModalOverlay = jQuery('#modal-overlay');
@@ -24,9 +22,11 @@ jQuery(function () {
     leadFormPhoneHelp.hide();
     leadFormNameHelp.hide();
     leadFormSubmitHelp.hide();
+    leadFormDescriptionInput.val(leadFormDescriptionDefault);
 
     leadForm.submit(function (event) {
         var formData = jQuery(this).serialize();
+        var yandexGoalName = jQuery(this).data('yandex-goal-name');
 
         jQuery.ajax({
             type: 'POST',
@@ -36,7 +36,7 @@ jQuery(function () {
             encode: true
         })
             .done(function (data) {
-                yaCounter34003970.reachGoal('lead_form_soprovozhdenie_sdelok_s_nedvizhimostyu');
+                yaCounter34003970.reachGoal(yandexGoalName);
 
                 leadFormPhoneInput.val('');
                 leadFormNameInput.val('');
@@ -86,6 +86,14 @@ jQuery(function () {
         leadFormSubmitBlock.removeClass('has-error');
         leadFormSubmitHelp.hide(true);
         leadFormSubmitHelp.html('');
+    });
+
+    leadFormGetServiceButtons.click(function (event) {
+        event.preventDefault();
+        leadFormDescriptionInput.val(jQuery(this).data('description'));
+        jQuery('html, body').animate({
+            scrollTop: leadForm.offset().top - 40
+        }, 300);
     });
 
     function showLeadFormModal() {

@@ -1,6 +1,6 @@
 @extends('layouts.site.general')
 
-@section('title', 'Страница не найдена')
+@section('title', 'Ошибка 404')
 
 @section('header')
     <div class="page-title-wrap">
@@ -17,18 +17,18 @@
                 <section class="post">
                     <article>
                         <header class="entry-header">
-                            <h2 class="entry-title">Страница не найдена</h2>
+                            <h2 class="entry-title">Упс! Страница не найдена :-(</h2>
                         </header>
                         <div class="entry-content clearfix">
                             <p>
-                                Отчего возникает ошибка 404? В основном, ошибка 404 (Not Found, документ не найден)
-                                связана с тем, что пользователь неправильно вводит URL ссылки на файл (или страницу)
-                                расположенный на сайте, или этого файла (страницы) не существует.
+                                Отчего возникает ошибка 404? В основном, эта ошибка случается когда пользователь неправильно вводит адрес страницы или переходит по некорректной ссылке.
+                            </p>
+                            <p>
+                                Возможно, вас интересовала наша <a href="{{ route('uslugi', ['name' => 'yuridicheskaya-konsultaciya']) }}">юридическая консультация</a>? К тому же вы можете ознакомиться с перечнем всех наших <a href="{{ route('uslugi') }}">услуг</a>. Или же вы можете пройти на <a href="{{ route('site.index') }}">главную страницу</a>.
                             </p>
                         </div>
                     </article>
                 </section>
-                <hr>
             </div>
         </div>
     </div>

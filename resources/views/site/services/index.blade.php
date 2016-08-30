@@ -2,7 +2,7 @@
 
 @section('title', 'Услуги')
 
-@section('page-keywords', 'юридическое сопровождение бизнеса, юридическое консультирование, сопровождение сделок с недвижимостью, регистрация ип, регистрация ооо, представительство в суде, представительство в арбитражном суде, подготовка юридических документов')
+@section('page-keywords', 'юридическое сопровождение бизнеса, юридическая консультация, сопровождение сделок с недвижимостью, регистрация ип, регистрация ооо, представительство в суде, представительство в арбитражном суде, подготовка юридических документов')
 @section('page-description', 'Перечень услуг юридической компании Торгова и партнёры')
 
 @section('header')
@@ -16,7 +16,6 @@
                     <span>Услуги</span>
                 </span>
             </div>
-            <h1>Наши услуги</h1>
         </div>
     </div>
 @endsection
@@ -25,13 +24,15 @@
     <div id="main">
         <div class="container">
             <div id="content">
+                <h1>Наши услуги</h1>
+                <hr>
                 <section class="post">
                     <article>
                         <header class="entry-header">
                             <h2 class="entry-title">
-                                <a href="{{ route('uslugi', ['name' => 'yuridicheskoe-konsultirovanie']) }}"
-                                   title="Юридическое консультирование">
-                                    Юридическое консультирование
+                                <a href="{{ route('uslugi', ['name' => 'yuridicheskaya-konsultaciya']) }}"
+                                   title="Юридическая консультация">
+                                    Юридическая консультация
                                 </a>
                             </h2>
                         </header>
@@ -44,8 +45,8 @@
                             </p>
                         </div>
                         <footer>
-                            <a class="readmore" href="{{ route('uslugi', ['name' => 'yuridicheskoe-konsultirovanie']) }}"
-                               title="Подробнее об услуге Юридическое консультирование">Подробнее об услуге</a>
+                            <a class="readmore" href="{{ route('uslugi', ['name' => 'yuridicheskaya-konsultaciya']) }}"
+                               title="Подробнее об услуге Юридическая консультация">Подробнее об услуге</a>
                         </footer>
                     </article>
                 </section>
@@ -54,7 +55,7 @@
                     <article>
                         <header class="entry-header">
                             <h2 class="entry-title">
-                                <a href="{{ route('uslugi', ['name' => 'registraciya-predprinimatelej']) }}"
+                                <a href="{{ route('uslugi', ['name' => 'registraciya-ip']) }}"
                                    title="Регистрация индивидуального предпринимателя (ИП)">
                                     Регистрация ИП
                                 </a>
@@ -69,7 +70,7 @@
                             </p>
                         </div>
                         <footer>
-                            <a class="readmore" href="{{ route('uslugi', ['name' => 'registraciya-predprinimatelej']) }}"
+                            <a class="readmore" href="{{ route('uslugi', ['name' => 'registraciya-ip']) }}"
                                title="Подробнее об услуге Регистрация индивидуального предпринимателя (ИП)">
                                 Подробнее об услуге
                             </a>
@@ -81,7 +82,7 @@
                     <article>
                         <header class="entry-header">
                             <h2 class="entry-title">
-                                <a href="{{ route('uslugi', ['name' => 'registraciya-organizacij']) }}"
+                                <a href="{{ route('uslugi', ['name' => 'registraciya-ooo']) }}"
                                    title="Регистрация общества с ограниченной ответственностью (ООО)">
                                     Регистрация ООО
                                 </a>
@@ -96,7 +97,7 @@
                             </p>
                         </div>
                         <footer>
-                            <a class="readmore" href="{{ route('uslugi', ['name' => 'registraciya-organizacij']) }}"
+                            <a class="readmore" href="{{ route('uslugi', ['name' => 'registraciya-ooo']) }}"
                                title="Подробнее об услуге Регистрация общества с ограниченной ответственностью (ООО)">
                                 Подробнее об услуге
                             </a>

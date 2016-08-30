@@ -325,12 +325,10 @@
 
     .breadcrumb {
         margin-top: 0;
-        float: none;
-        text-align: left;
     }
 
     #main {
-        padding-top: 50px;
+        padding-top: 25px;
     }
 
     /* Column */
@@ -573,6 +571,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+    #access ul li hr {
+        display: none;
+    }
+
     .lead-form {
         width: 100%;
         margin: 0 0;

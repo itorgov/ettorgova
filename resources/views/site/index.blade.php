@@ -50,7 +50,7 @@
                     <div class="column clearfix">
                         <div class="one-fourth">
                             <div class="service-item clearfix">
-                                <h3 class="service-title">Юридическое консультирование</h3>
+                                <h3 class="service-title">Юридическая консультация</h3>
                             </div>
                             <article>
                                 <p>
@@ -61,11 +61,11 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('uslugi', ['name' => 'yuridicheskoe-konsultirovanie']) }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'yuridicheskaya-konsultaciya']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
-                                <h3 class="service-title">Регистрация предпринимателей</h3>
+                                <h3 class="service-title">Регистрация ИП</h3>
                             </div>
                             <article>
                                 <p>
@@ -76,11 +76,11 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('uslugi', ['name' => 'registraciya-predprinimatelej']) }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'registraciya-ip']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth clearfix-half">
                             <div class="service-item clearfix">
-                                <h3 class="service-title">Регистрация организаций</h3>
+                                <h3 class="service-title">Регистрация ООО</h3>
                             </div>
                             <article>
                                 <p>
@@ -91,7 +91,7 @@
                                 </p>
                             </article>
                             <a class="more-link" title="Подробнее"
-                               href="{{ route('uslugi', ['name' => 'registraciya-organizacij']) }}">Подробнее</a>
+                               href="{{ route('uslugi', ['name' => 'registraciya-ooo']) }}">Подробнее</a>
                         </div>
                         <div class="one-fourth">
                             <div class="service-item clearfix">
