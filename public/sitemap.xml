@@ -2,67 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://ettorgova.ru</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/uslugi</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/uslugi/yuridicheskaya-konsultaciya</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/uslugi/registraciya-ip</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/uslugi/registraciya-ooo</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/uslugi/yuridicheskoe-soprovozhdenie-biznesa</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/uslugi/predstavitelstvo-v-arbitrazhnyh-sudah</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/uslugi/predstavitelstvo-v-sude</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/uslugi/podgotovka-yuridicheskih-dokumentov</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/uslugi/soprovozhdenie-sdelok-s-nedvizhimostyu</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/useful/stati</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/useful/stati/ne-vydacha-trudovoj-knizhki-rabotniku-pri-uvolnenii</loc>
-        <lastmod>2016-05-06</lastmod>
+        <lastmod>2016-09-11</lastmod>
+        <changefreq>never</changefreq>
+    </url>
+    <url>
+        <loc>https://ettorgova.ru/useful/stati/yurist-po-semejnym-delam</loc>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>never</changefreq>
     </url>
     <url>
         <loc>https://ettorgova.ru/kontakty</loc>
-        <lastmod>2016-06-01</lastmod>
+        <lastmod>2016-09-11</lastmod>
         <changefreq>monthly</changefreq>
     </url>
 </urlset>

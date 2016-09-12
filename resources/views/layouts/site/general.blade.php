@@ -3,12 +3,12 @@
 
 @section('meta')
     @parent
-    <meta name="Keywords" content="@yield('page-keywords')" />
-    <meta name="Description" content="@yield('page-description')" />
-    <meta property="og:title" content="@yield('title') - юридическая компания «Торгова и партнёры»" />
-    <meta property="og:description" content="@yield('page-description')" />
-    <meta property="og:url" content="@yield('page-description')" />
-    <meta property="og:type" content="@yield('page-type')" />
+    <meta name="Keywords" content="@yield('page-keywords')"/>
+    <meta name="Description" content="@yield('page-description')"/>
+    <meta property="og:title" content="@yield('title') - юридическая компания «Торгова и партнёры»"/>
+    <meta property="og:description" content="@yield('page-description')"/>
+    <meta property="og:url" content="@yield('page-description')"/>
+    <meta property="og:type" content="@yield('page-type')"/>
 @endsection
 
 @section('css')
@@ -111,7 +111,9 @@
                                                 Сопровождение сделок с недвижимостью
                                             </a>
                                         </li>
-                                        <li><hr></li>
+                                        <li>
+                                            <hr>
+                                        </li>
                                         <li class="{{ $routeHelper->checkActiveMenuItem('registraciya-ip', 'current-menu-item', 1) }}">
                                             <a href="{{ route('uslugi', ['name' => 'registraciya-ip']) }}">
                                                 Регистрация ИП
@@ -127,7 +129,9 @@
                                                 Юридическое сопровождение бизнеса
                                             </a>
                                         </li>
-                                        <li><hr></li>
+                                        <li>
+                                            <hr>
+                                        </li>
                                         <li class="{{ $routeHelper->checkActiveMenuItem('predstavitelstvo-v-sude', 'current-menu-item', 1) }}">
                                             <a href="{{ route('uslugi', ['name' => 'predstavitelstvo-v-sude']) }}">
                                                 Представительство в суде
@@ -199,16 +203,13 @@
                                 <span class="widget-title">О компании</span>
 
                                 <div class="textwidget">
-                                    Юридическая компания "Торгова и партнёры" - профессиональная и современная
-                                    юридическая компания. Непрерывное
-                                    отслеживание нововведений в области права позволяет нам заранее предугадывать ходы
-                                    для
-                                    решения ваших вопросов.<br/>Мы оказываем юридические услуги гражданам и юридическим
-                                    лицам, предлагаем различные варианты сотрудничества - от разового сопровождения
-                                    до
-                                    комплексной юридической помощи. Для наших клиентов мы стараемся подобрать
-                                    наиболее
-                                    стратегически продуманные решения поставленных целей и задач.
+                                    Юридическая компания "Торгова и партнёры" – профессиональная и современная
+                                    юридическая компания. Постоянный мониторинг изменений в законодательстве позволяет
+                                    нам заранее предугадывать ходы для решения ваших вопросов.
+                                    Мы оказываем юридические услуги гражданам и юридическим лицам и предоставляем самые
+                                    разные варианты сотрудничества - как разовое сопровождение, так и комплексная
+                                    юридическая помощь с возможностью абонентского обслуживания. Мы стараемся понять
+                                    вашу проблему и подобрать возможные пути решения.
                                 </div>
                             </aside>
                         </div>
@@ -219,7 +220,8 @@
 
                                 <div class="textwidget">
                                     <p>Юридическая компания <strong>"Торгова и партнёры"</strong><br>
-                                        603135, Нижний Новгород, проспект Ленина, 51, офис 3 (возле станции метро "Двигатель
+                                        603135, Нижний Новгород, проспект Ленина, 51, офис 3 (возле станции метро
+                                        "Двигатель
                                         Революции")
                                     </p>
 
