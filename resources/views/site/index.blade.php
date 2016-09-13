@@ -94,10 +94,10 @@
                 <section class="widget widget_recent_work">
                     <div class="column clearfix">
                         <div class="one-fourth">
-                            <h2 class="widget-title">Статьи, которые мы пишем</h2>
-
+                            <h3 class="widget-title">Статьи, которые мы пишем</h3>
                             <p>
-                                Проконсультировавшись с юристом по семейному праву, можно избежать многих ошибок в непростых ситуациях, которые вредят в дальнейших разбирательствах.
+                                Проконсультировавшись с юристом по семейному праву, можно избежать многих ошибок в
+                                непростых ситуациях, которые вредят в дальнейших разбирательствах.
                             </p>
                             <a class="call-to-action"
                                href="{{ route('stati', ['name' => 'yurist-po-semejnym-delam']) }}"
@@ -106,14 +106,16 @@
                             </a>
                         </div>
                         <div class="one-fourth">
-                            <a title="Выигранные суды (судебная практика)" href="#">
+                            <a title="Выигранные суды (судебная практика)" href="{{ route('sudebnayaPraktika') }}">
                                 <img width="474" height="342"
                                      src="{{ url(config('app.staticUrl') . '/files/vyigrannye-sudy-sudebnaya-praktika.jpg') }}"
                                      alt="Судебная практика">
                             </a>
 
                             <h3 class="custom-gallery-title">
-                                <a href="#" title="">Выигранные суды (судебная практика)</a>
+                                <a href="{{ route('sudebnayaPraktika') }}"
+                                   title="Посмотреть судебную практику юридической компании Торгова и партнёры">Выигранные
+                                    суды (судебная практика)</a>
                             </h3>
 
                             <p>
@@ -121,14 +123,16 @@
                             </p>
                         </div>
                         <div class="one-fourth clearfix-half">
-                            <a title="Новое в российском законодательстве" href="#">
+                            <a title="Новое в российском законодательстве" href="{{ route('novosti') }}">
                                 <img width="474" height="342"
                                      src="{{ url(config('app.staticUrl') . '/files/novoe-v-rossijskom-zakonodatelstve.jpg') }}"
                                      alt="Новое в российском законодательстве">
                             </a>
 
                             <h3 class="custom-gallery-title">
-                                <a href="#" title="">Новое в российском законодательстве</a>
+                                <a href="{{ route('novosti') }}"
+                                   title="Узнать последние изменения в российском законодательстве">Новое в российском
+                                    законодательстве</a>
                             </h3>
 
                             <p>
@@ -136,18 +140,19 @@
                             </p>
                         </div>
                         <div class="one-fourth">
-                            <a title="Задать вопрос нашему юристу" href="#">
+                            <a title="Задать вопрос нашему юристу" href="{{ route('online') }}">
                                 <img width="474" height="342"
                                      src="{{ url(config('app.staticUrl') . '/files/zadat-vopros-yuristu.jpg') }}"
                                      alt="Задать вопрос юристу">
                             </a>
 
                             <h3 class="custom-gallery-title">
-                                <a href="#" title="">Задать вопрос нашему юристу</a>
+                                <a href="{{ route('online') }}" title="Задайте вопрос нашим юристам в режиме онлайн">Задать
+                                    вопрос нашему юристу</a>
                             </h3>
 
                             <p>
-                                Задавайте нам вопросы, не стесняйтесь!
+                                Задавайте нам вопросы онлайн, не стесняйтесь!
                             </p>
                         </div>
                     </div>

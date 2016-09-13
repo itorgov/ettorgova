@@ -82,7 +82,7 @@
                     <section id="site-logo">
                         <span id="site-title">
                             <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
-                                ЮК "Торгова и партнёры"
+                                Торгова и партнёры
                             </a>
                         </span>
                     </section>
@@ -94,7 +94,7 @@
                                     <a href="{{ route('site.index') }}">Главная</a>
                                 </li>
                                 <li class="{{ $routeHelper->checkActiveMenuItem('uslugi', 'current-menu-item') }}">
-                                    <a href="{{ route('uslugi') }}">Услуги</a>
+                                    <a href="{{ route('uslugi') }}">Юридические услуги</a>
                                     <ul class="sub-menu">
                                         <li class="{{ $routeHelper->checkActiveMenuItem('yuridicheskaya-konsultaciya', 'current-menu-item', 1) }}">
                                             <a href="{{ route('uslugi', ['name' => 'yuridicheskaya-konsultaciya']) }}">
@@ -145,7 +145,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#">Акции</a>
+                                    <a href="{{ route('skidki') }}">Акции и скидки</a>
                                 </li>
                                 <li class="{{ $routeHelper->checkActiveMenuItem('useful', 'current-menu-item') }}">
                                     <a href="#">Полезная информация</a>
@@ -182,10 +182,10 @@
                                             <a href="{{ route('site.index') }}">Главная страница</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('uslugi') }}">Услуги</a>
+                                            <a href="{{ route('uslugi') }}">Юридические услуги</a>
                                         </li>
                                         <li>
-                                            <a href="#">Акции</a>
+                                            <a href="{{ route('skidki') }}">Акции и скидки</a>
                                         </li>
                                         <li>
                                             <a href="{{ route('stati') }}">Статьи, которые мы пишем</a>
