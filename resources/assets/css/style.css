@@ -68,6 +68,11 @@ th {
     line-height: 24px;
 }
 
+th.table-price-field {
+    width: 160px;
+    text-align: right;
+}
+
 td {
     padding: 8px;
     border-width: 0 1px 1px 0;
@@ -309,11 +314,8 @@ blockquote cite {
 
 /* Breadcrumb */
 .breadcrumb {
-    float: right;
-    text-align: right;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 12px;
 }
 
 .breadcrumb,
@@ -886,6 +888,10 @@ a.more-link:hover {
     color: #63C6AE;
 }
 
+#access ul li hr {
+    margin: 0;
+}
+
 /* Dropdown */
 #access ul li ul,
 #access ul li:hover ul ul,
@@ -1149,7 +1155,7 @@ a.more-link:hover {
 /* =Content
 ----------------------------------------------- */
 #main {
-    padding: 60px 0 10px;
+    padding: 30px 0 10px;
 }
 
 #main form input,
@@ -1175,11 +1181,6 @@ a.more-link:hover {
 #content ul,
 #content ol {
     margin: 0 0 20px 30px;
-}
-
-#content ul a,
-#content ol a {
-    color: #777;
 }
 
 #content ul a:hover,
@@ -1284,6 +1285,18 @@ a.more-link:hover {
 }
 
 .entry-header h1 {
+    padding-bottom: 5px;
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 29px;
+}
+
+.service-description header {
+    padding-bottom: 10px;
+}
+
+.service-description header h1 {
     padding-bottom: 5px;
     font-size: 22px;
     font-weight: normal;
@@ -1476,6 +1489,10 @@ footer.entry-meta a.readmore {
     padding-bottom: 5px;
     display: block;
     overflow: hidden;
+}
+
+.entry-content h2 {
+    font-size: 18px;
 }
 
 .entry-content dt,
@@ -2037,7 +2054,7 @@ div.bbp-search-form button {
 /* =Widgets
 ----------------------------------------------- */
 .widget {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .widget ul li a {
@@ -2406,6 +2423,7 @@ div.bbp-search-form button {
     line-height: 24px;
     color: #ccc;
     font-weight: bold;
+    display: block;
 }
 
 #colophon .widget_article {

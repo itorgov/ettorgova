@@ -11,4 +11,22 @@ use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 class Controller extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
+
+    protected $needRedirectUrls = [
+        '/uslugi/yuridicheskoe-konsultirovanie' => '/uslugi/yuridicheskaya-konsultaciya',
+        '/uslugi/registraciya-predprinimatelej' => '/uslugi/registraciya-ip',
+        '/uslugi/registraciya-organizacij' => '/uslugi/registraciya-ooo'
+    ];
+
+    protected function getRedirectUrl()
+    {
+        $request = request();
+        $url = $request->getRequestUri();
+
+        if (array_key_exists($url, $this->needRedirectUrls)) {
+            return $this->needRedirectUrls[$url];
+        }
+
+        return null;
+    }
 }

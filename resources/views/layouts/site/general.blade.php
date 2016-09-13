@@ -5,8 +5,10 @@
     @parent
     <meta name="Keywords" content="@yield('page-keywords')"/>
     <meta name="Description" content="@yield('page-description')"/>
-    <meta property="og:title" content="@yield('title') - ЮК Торгова и партнёры"/>
+    <meta property="og:title" content="@yield('title') - юридическая компания «Торгова и партнёры»"/>
     <meta property="og:description" content="@yield('page-description')"/>
+    <meta property="og:url" content="@yield('page-description')"/>
+    <meta property="og:type" content="@yield('page-type')"/>
 @endsection
 
 @section('css')
@@ -80,7 +82,7 @@
                     <section id="site-logo">
                         <span id="site-title">
                             <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
-                                ЮК "Торгова и партнёры"
+                                Торгова и партнёры
                             </a>
                         </span>
                     </section>
@@ -92,36 +94,11 @@
                                     <a href="{{ route('site.index') }}">Главная</a>
                                 </li>
                                 <li class="{{ $routeHelper->checkActiveMenuItem('uslugi', 'current-menu-item') }}">
-                                    <a href="{{ route('uslugi') }}">Услуги</a>
+                                    <a href="{{ route('uslugi') }}">Юридические услуги</a>
                                     <ul class="sub-menu">
-                                        <li class="{{ $routeHelper->checkActiveMenuItem('yuridicheskoe-konsultirovanie', 'current-menu-item', 1) }}">
-                                            <a href="{{ route('uslugi', ['name' => 'yuridicheskoe-konsultirovanie']) }}">
-                                                Юридическое консультирование
-                                            </a>
-                                        </li>
-                                        <li class="{{ $routeHelper->checkActiveMenuItem('registraciya-predprinimatelej', 'current-menu-item', 1) }}">
-                                            <a href="{{ route('uslugi', ['name' => 'registraciya-predprinimatelej']) }}">
-                                                Регистрация ИП
-                                            </a>
-                                        </li>
-                                        <li class="{{ $routeHelper->checkActiveMenuItem('registraciya-organizacij', 'current-menu-item', 1) }}">
-                                            <a href="{{ route('uslugi', ['name' => 'registraciya-organizacij']) }}">
-                                                Регистрация ООО
-                                            </a>
-                                        </li>
-                                        <li class="{{ $routeHelper->checkActiveMenuItem('yuridicheskoe-soprovozhdenie-biznesa', 'current-menu-item', 1) }}">
-                                            <a href="{{ route('uslugi', ['name' => 'yuridicheskoe-soprovozhdenie-biznesa']) }}">
-                                                Юридическое сопровождение бизнеса
-                                            </a>
-                                        </li>
-                                        <li class="{{ $routeHelper->checkActiveMenuItem('predstavitelstvo-v-arbitrazhnyh-sudah', 'current-menu-item', 1) }}">
-                                            <a href="{{ route('uslugi', ['name' => 'predstavitelstvo-v-arbitrazhnyh-sudah']) }}">
-                                                Представительство в Арбитражных судах
-                                            </a>
-                                        </li>
-                                        <li class="{{ $routeHelper->checkActiveMenuItem('predstavitelstvo-v-sude', 'current-menu-item', 1) }}">
-                                            <a href="{{ route('uslugi', ['name' => 'predstavitelstvo-v-sude']) }}">
-                                                Представительство в суде
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('yuridicheskaya-konsultaciya', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'yuridicheskaya-konsultaciya']) }}">
+                                                Юридическая консультация
                                             </a>
                                         </li>
                                         <li class="{{ $routeHelper->checkActiveMenuItem('podgotovka-yuridicheskih-dokumentov', 'current-menu-item', 1) }}">
@@ -134,10 +111,41 @@
                                                 Сопровождение сделок с недвижимостью
                                             </a>
                                         </li>
+                                        <li>
+                                            <hr>
+                                        </li>
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('registraciya-ip', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'registraciya-ip']) }}">
+                                                Регистрация ИП
+                                            </a>
+                                        </li>
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('registraciya-ooo', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'registraciya-ooo']) }}">
+                                                Регистрация ООО
+                                            </a>
+                                        </li>
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('yuridicheskoe-soprovozhdenie-biznesa', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'yuridicheskoe-soprovozhdenie-biznesa']) }}">
+                                                Юридическое сопровождение бизнеса
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr>
+                                        </li>
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('predstavitelstvo-v-sude', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'predstavitelstvo-v-sude']) }}">
+                                                Представительство в суде
+                                            </a>
+                                        </li>
+                                        <li class="{{ $routeHelper->checkActiveMenuItem('predstavitelstvo-v-arbitrazhnyh-sudah', 'current-menu-item', 1) }}">
+                                            <a href="{{ route('uslugi', ['name' => 'predstavitelstvo-v-arbitrazhnyh-sudah']) }}">
+                                                Представительство в Арбитражных судах
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                    <a href="#">Акции</a>
+                                    <a href="{{ route('skidki') }}">Акции и скидки</a>
                                 </li>
                                 <li class="{{ $routeHelper->checkActiveMenuItem('useful', 'current-menu-item') }}">
                                     <a href="#">Полезная информация</a>
@@ -166,7 +174,7 @@
                     <div class="widget-area clearfix">
                         <div class="one-third">
                             <aside id="nav_menu-2" class="widget widget_nav_menu">
-                                <h2 class="widget-title">Разделы сайта</h2>
+                                <span class="widget-title">Разделы сайта</span>
 
                                 <div class="menu-secondary-menu-container">
                                     <ul id="menu-secondary-menu" class="menu">
@@ -174,10 +182,10 @@
                                             <a href="{{ route('site.index') }}">Главная страница</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('uslugi') }}">Услуги</a>
+                                            <a href="{{ route('uslugi') }}">Юридические услуги</a>
                                         </li>
                                         <li>
-                                            <a href="#">Акции</a>
+                                            <a href="{{ route('skidki') }}">Акции и скидки</a>
                                         </li>
                                         <li>
                                             <a href="{{ route('stati') }}">Статьи, которые мы пишем</a>
@@ -192,30 +200,28 @@
 
                         <div class="one-third">
                             <aside id="text-9" class="widget widget_text">
-                                <h2 class="widget-title">О компании</h2>
+                                <span class="widget-title">О компании</span>
 
                                 <div class="textwidget">
-                                    Юридическая компания "Торгова и партнёры" - профессиональная и современная
-                                    юридическая компания. Непрерывное
-                                    отслеживание нововведений в области права позволяет нам заранее предугадывать ходы
-                                    для
-                                    решения ваших вопросов.<br/>Мы оказываем юридические услуги гражданам и юридическим
-                                    лицам, предлагаем различные варианты сотрудничества - от разового сопровождения
-                                    до
-                                    комплексной юридической помощи. Для наших клиентов мы стараемся подобрать
-                                    наиболее
-                                    стратегически продуманные решения поставленных целей и задач.
+                                    Юридическая компания "Торгова и партнёры" – профессиональная и современная
+                                    юридическая компания. Постоянный мониторинг изменений в законодательстве позволяет
+                                    нам заранее предугадывать ходы для решения ваших вопросов.
+                                    Мы оказываем юридические услуги гражданам и юридическим лицам и предоставляем самые
+                                    разные варианты сотрудничества - как разовое сопровождение, так и комплексная
+                                    юридическая помощь с возможностью абонентского обслуживания. Мы стараемся понять
+                                    вашу проблему и подобрать возможные пути решения.
                                 </div>
                             </aside>
                         </div>
 
                         <div class="one-third">
                             <aside id="text-3" class="widget widget_text">
-                                <h2 class="widget-title">Контактная информация</h2>
+                                <span class="widget-title">Контактная информация</span>
 
                                 <div class="textwidget">
                                     <p>Юридическая компания <strong>"Торгова и партнёры"</strong><br>
-                                        603135, Нижний Новгород, проспект Ленина, 51, офис 3 (возле станции метро "Двигатель
+                                        603135, Нижний Новгород, проспект Ленина, 51, офис 3 (возле станции метро
+                                        "Двигатель
                                         Революции")
                                     </p>
 

@@ -8,6 +8,22 @@ Route::get('kontakty', [
     'as' => 'kontakty',
     'uses' => 'SiteController@kontakty'
 ]);
+Route::get('skidki', [
+    'as' => 'skidki',
+    'uses' => 'SiteController@skidki'
+]);
+Route::get('sudebnaya-praktika', [
+    'as' => 'sudebnayaPraktika',
+    'uses' => 'SiteController@sudebnayaPraktika'
+]);
+Route::get('novosti', [
+    'as' => 'novosti',
+    'uses' => 'SiteController@novosti'
+]);
+Route::get('online', [
+    'as' => 'online',
+    'uses' => 'SiteController@online'
+]);
 Route::get('uslugi/{name?}', [
     'as' => 'uslugi',
     'uses' => 'SiteController@services'

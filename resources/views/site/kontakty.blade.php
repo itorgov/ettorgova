@@ -2,6 +2,7 @@
 
 @section('title', 'Контакты')
 
+@section('page-type', 'website')
 @section('page-keywords', 'контактная информация торгова и партнёры')
 @section('page-description', 'Контактная информация юридической компании Торгова и партнёры')
 
@@ -22,7 +23,6 @@
                     <span>Контакты</span>
                 </span>
             </div>
-            <h1>Контакты</h1>
         </div>
     </div>
 @endsection
@@ -31,31 +31,35 @@
     <div id="main">
         <div class="container">
             <div id="content">
-                <section>
-                    <div class="entry-content">
-                        <p>
-                            Юридическая компания "Торгова и партнёры" располагается в Нижнем Новгороде на проспекте
-                            Ленина, дом 51, офис 3.
-                        </p>
-                        <p>
-                            <strong>Время работы</strong>: понедельник - пятница, с 10:00 до 19:00.
-                        </p>
-                        <p>
-                            <strong>Телефон</strong>:
-                            <a title="Нажмите, чтобы позвонить нам."
-                               href="tel:+78312889128"
-                               onclick="yaCounter34003970.reachGoal('make_call_to_ip_phone'); return true;">
-                                288-91-28
-                            </a>
-                            <br/>
-                            <strong>Мобильный телефон</strong>:
-                            <a title="Нажмите, чтобы позвонить нам."
-                               href="tel:+79990790781"
-                               onclick="yaCounter34003970.reachGoal('make_call_to_mobile_phone'); return true;">
-                                +7 (999) 079-078-1
-                            </a>
-                        </p>
-                    </div>
+                <h1>Контакты</h1>
+                <hr>
+                <section class="post">
+                    <article>
+                        <div class="entry-content">
+                            <p>
+                                Юридическая компания "Торгова и партнёры" располагается в Нижнем Новгороде на проспекте
+                                Ленина, дом 51, офис 3.
+                            </p>
+                            <p>
+                                <strong>Время работы</strong>: понедельник - пятница, с 10:00 до 19:00.
+                            </p>
+                            <p>
+                                <strong>Телефон</strong>:
+                                <a title="Нажмите, чтобы позвонить нам."
+                                   href="tel:+78312889128"
+                                   onclick="yaCounter34003970.reachGoal('make_call_to_ip_phone'); return true;">
+                                    288-91-28
+                                </a>
+                                <br/>
+                                <strong>Мобильный телефон</strong>:
+                                <a title="Нажмите, чтобы позвонить нам."
+                                   href="tel:+79990790781"
+                                   onclick="yaCounter34003970.reachGoal('make_call_to_mobile_phone'); return true;">
+                                    +7 (999) 079-078-1
+                                </a>
+                            </p>
+                        </div>
+                    </article>
                 </section>
                 <section class="contacts-map">
                     <div class="entry-content" id="map"></div>
