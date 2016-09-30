@@ -70,7 +70,6 @@ th {
 
 th.table-price-field {
     width: 160px;
-    text-align: right;
 }
 
 td {
@@ -2605,4 +2604,75 @@ div.form-group.has-error {
 
 .has-error input:-ms-input-placeholder {
     color: #F57A90;
+}
+
+.plans-pricing .pricing-table {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px 40px;
+    font-size: 15px;
+    color: #000;
+}
+
+.plans-pricing .pricing-table .head-title {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.plans-pricing .pricing-table .price {
+    position: relative;
+    font-size: 80px;
+    line-height: 80px;
+    display: inline-block;
+}
+
+.plans-pricing .pricing-table .price .fa-check {
+    color: #63c6ae;
+}
+
+.plans-pricing .pricing-table .price .fa-times {
+    color: #F57A90;
+}
+
+.plans-pricing .pricing-table hr {
+    margin: 20px 0;
+}
+
+.plans-pricing .pricing-table ul {
+    padding-bottom: 30px;
+    list-style: none !important;
+    margin: 0 !important;;
+}
+
+.plans-pricing .pricing-table ul li {
+    padding-bottom: 12px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-check:before {
+    content: "\f00c";
+}
+
+.fa-times:before {
+    content: "\f00d";
+}
+
+.background-f1 {
+    background-color: #f1f1f1;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.widget_promotional_bar .promotional-text.without-button {
+    width: 100%;
 }
