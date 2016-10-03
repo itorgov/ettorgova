@@ -726,7 +726,7 @@ a.more-link:hover {
 /* Logo, Title and Description */
 #site-logo {
     float: left;
-    margin-top: 32px;
+    margin-top: 25px;
 }
 
 #site-title {
@@ -2639,7 +2639,6 @@ div.form-group.has-error {
 }
 
 .plans-pricing .pricing-table ul {
-    padding-bottom: 30px;
     list-style: none !important;
     margin: 0 !important;;
 }
@@ -2671,6 +2670,10 @@ div.form-group.has-error {
 
 .margin-bottom-15 {
     margin-bottom: 15px;
+}
+
+.margin-bottom-minus-30 {
+    margin-bottom: -30px;
 }
 
 .widget_promotional_bar .promotional-text.without-button {

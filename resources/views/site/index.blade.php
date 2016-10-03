@@ -21,6 +21,7 @@
                     <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
                         <img width="1440" height="500"
                              src="{{ url(config('app.staticUrl') . '/files/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page.jpg') }}"
+                             srcset="{{ url(config('app.staticUrl') . '/files/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page-320x111.jpg') }} 320w, {{ url(config('app.staticUrl') . '/files/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page-375x130.jpg') }} 375w, {{ url(config('app.staticUrl') . '/files/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page-425x148.jpg') }} 425w, {{ url(config('app.staticUrl') . '/files/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page-768x267.jpg') }} 768w, {{ url(config('app.staticUrl') . '/files/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page-1024x356.jpg') }} 1024w"
                              class="pngfix wp-post-image"
                              alt='Юридическая компания "Торгова и партнёры"'
                              title='Юридическая компания "Торгова и партнёры"'>
@@ -109,6 +110,7 @@
                             <a title="Выигранные суды (судебная практика)" href="{{ route('sudebnayaPraktika') }}">
                                 <img width="474" height="342"
                                      src="{{ url(config('app.staticUrl') . '/files/vyigrannye-sudy-sudebnaya-praktika.jpg') }}"
+                                     srcset="{{ url(config('app.staticUrl') . '/files/vyigrannye-sudy-sudebnaya-praktika-300x216.jpg') }} 425w, {{ url(config('app.staticUrl') . '/files/vyigrannye-sudy-sudebnaya-praktika-343x247.jpg') }} 1024w, {{ url(config('app.staticUrl') . '/files/vyigrannye-sudy-sudebnaya-praktika-222x160.jpg') }} 2560w"
                                      alt="Судебная практика">
                             </a>
 
@@ -126,6 +128,7 @@
                             <a title="Новое в российском законодательстве" href="{{ route('novosti') }}">
                                 <img width="474" height="342"
                                      src="{{ url(config('app.staticUrl') . '/files/novoe-v-rossijskom-zakonodatelstve.jpg') }}"
+                                     srcset="{{ url(config('app.staticUrl') . '/files/novoe-v-rossijskom-zakonodatelstve-300x216.jpg') }} 425w, {{ url(config('app.staticUrl') . '/files/novoe-v-rossijskom-zakonodatelstve-343x247.jpg') }} 1024w, {{ url(config('app.staticUrl') . '/files/novoe-v-rossijskom-zakonodatelstve-222x160.jpg') }} 2560w"
                                      alt="Новое в российском законодательстве">
                             </a>
 
@@ -143,6 +146,7 @@
                             <a title="Задать вопрос нашему юристу" href="{{ route('online') }}">
                                 <img width="474" height="342"
                                      src="{{ url(config('app.staticUrl') . '/files/zadat-vopros-yuristu.jpg') }}"
+                                     srcset="{{ url(config('app.staticUrl') . '/files/zadat-vopros-yuristu-300x216.jpg') }} 425w, {{ url(config('app.staticUrl') . '/files/zadat-vopros-yuristu-343x247.jpg') }} 1024w, {{ url(config('app.staticUrl') . '/files/zadat-vopros-yuristu-222x160.jpg') }} 2560w"
                                      alt="Задать вопрос юристу">
                             </a>
 

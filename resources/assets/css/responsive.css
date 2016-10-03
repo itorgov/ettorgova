@@ -344,7 +344,6 @@
     .widget_service .one-fourth,
     .widget_recent_work .one-fourth {
         margin: 0 0 15px 0;
-        padding-bottom: 20px;
         width: 100%;
     }
 
@@ -567,6 +566,12 @@
 @media only screen and (max-width: 320px) {
     .contacts-map {
         padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #site-logo {
+        margin-top: 20px;
     }
 }
 

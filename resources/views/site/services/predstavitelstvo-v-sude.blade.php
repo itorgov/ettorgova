@@ -58,11 +58,12 @@
                                             <li>Не нужно по 100 раз пересказывать материалы дела для получения хорошей
                                                 консультации — юрист всегда в курсе дела
                                             </li>
-                                            <li>В 90% решение дела в Вашу пользу</li>
+                                            <li>В 90% случаев решение дела в Вашу пользу</li>
                                         </ul>
                                     </div>
-                                    <img src="{{ url(config('app.staticUrl') . '/files/dogovor.png') }}"
-                                         alt="Решение Ваших проблем силами наших юристов">
+                                    <img src="{{ url(config('app.staticUrl') . '/files/predstavitelstvo-v-sude-torgova-i-partnery.png') }}"
+                                         alt="Решение Ваших проблем силами наших юристов"
+                                         class="margin-bottom-minus-30">
                                 </div>
                                 <div class="one-half background-f1">
                                     <div class="pricing-table">
@@ -79,9 +80,9 @@
                                             <li>Игра 50/50</li>
                                         </ul>
                                     </div>
-                                    <img src="{{ url(config('app.staticUrl') . '/files/chan.png') }}"
+                                    <img src="{{ url(config('app.staticUrl') . '/files/uchastie-v-sude-bez-predstavitelya.png') }}"
                                          alt="Решение своих проблем без нашего юриста"
-                                         style="margin-bottom: -29px;">
+                                         class="margin-bottom-minus-30">
                                 </div>
                             </div>
 
