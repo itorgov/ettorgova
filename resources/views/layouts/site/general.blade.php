@@ -80,11 +80,13 @@
             <div class="hgroup-wrap">
                 <div class="container clearfix">
                     <section id="site-logo">
-                        <span id="site-title">
-                            <a href="{{ route('site.index') }}" title='Юридическая компания "Торгова и партнёры"'>
-                                Торгова и партнёры
-                            </a>
-                        </span>
+                        <object width="285"
+                                height="55"
+                                data="{{ url(config('app.staticUrl') . '/files/logotip-yuridicheskoj-kompanii-torgova-i-partnery.svg') }}">
+                            <img width="285"
+                                 height="55"
+                                 src="{{ url(config('app.staticUrl') . '/files/logotip-yuridicheskoj-kompanii-torgova-i-partnery.png') }}"/>
+                        </object>
                     </section>
                     <button class="menu-toggle">Меню</button>
                     <section class="hgroup-right">
