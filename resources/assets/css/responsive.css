@@ -546,6 +546,11 @@
         margin-left: 14px;
         width: 203px;
     }
+
+    /* Responsive Navigation */
+    .menu-toggle {
+        margin-top: 43px;
+    }
 }
 
 /* All Mobile size smaller than standard 320 (devices and browsers) */
