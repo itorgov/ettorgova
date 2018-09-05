@@ -17,23 +17,8 @@ class TelegramSender
 
     public function __construct()
     {
-        $this->apiUrl = 'https://api.telegram.org/bot' . env('TELEGRAM_ACCESS_TOKEN') . '/';
-        $this->chatId = env('TELEGRAM_CHAT_ID');
-    }
-
-    protected function makeRequest($method, $parameters)
-    {
-        $httpClient = new HttpClient([
-            'base_uri' => $this->apiUrl
-        ]);
-
-        $response = $httpClient->request('POST', $method, [
-            'json' => $parameters
-        ]);
-
-        $bodyResponse = \GuzzleHttp\json_decode((string)$response->getBody());
-
-        return $bodyResponse;
+        $this->apiUrl = 'https://api.telegram.org/bot' . config('telegram.token') . '/';
+        $this->chatId = config('telegram.chat');
     }
 
     /**
@@ -51,13 +36,28 @@ class TelegramSender
         ]);
     }
 
+    protected function makeRequest($method, $parameters)
+    {
+        $httpClient = new HttpClient([
+            'base_uri' => $this->apiUrl
+        ]);
+
+        $response = $httpClient->post($method, [
+            'json' => $parameters
+        ]);
+
+        $bodyResponse = json_decode($response->getBody()->getContents());
+
+        return $bodyResponse;
+    }
+
     /**
      * Отправляет контакт.
      *
      * @param string $phoneNumber Номер телефона.
      * @param string $firstName Имя.
      * @param string|null $lastName Фамилия.
-     * @return mixed|\Psr\Http\Message\ResponseInterface
+     * @return mixed
      */
     public function sendContact($phoneNumber, $firstName, $lastName = null)
     {
