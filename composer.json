@@ -1,9 +1,15 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "itorgov/ettorgova",
+    "description": "Torgova and Partners Law Firm's website (ettorgova.ru).",
+    "keywords": ["ettorgova"],
     "license": "MIT",
     "type": "project",
+    "authors": [
+        {
+            "name": "Ivan Torgov",
+            "email": "likecod@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=5.5.9",
         "ext-json": "*",
