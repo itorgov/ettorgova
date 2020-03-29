@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px => 1rem
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: $color-primary;
+  color: $color-white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $text-color-grey;
+  text-decoration: none;
+
+  @include on-event {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+}
