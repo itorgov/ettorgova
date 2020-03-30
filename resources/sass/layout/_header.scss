@@ -212,9 +212,13 @@
     max-height: 50rem;
     width: 100%;
     max-width: 144rem;
-    background-image: url("/img/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page.jpg");
+    background-image: url("/img/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page-1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media only screen and (min-resolution: 192dpi), only screen and (-webkit-min-device-pixel-ratio: 2) {
+      background-image: url("/img/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page-2x.jpg");
+    }
   }
 }

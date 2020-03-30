@@ -31,6 +31,5 @@ a {
 
   @include on-event {
     color: $color-primary;
-    text-decoration: underline;
   }
 }

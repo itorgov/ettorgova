@@ -1,3 +1,133 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  &__info-bg {
+    display: flex;
+    justify-content: center;
+
+    background-color: $bg-color-grey-dark;
+    color: $text-color-grey-light-4;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+
+    margin: 5rem 1rem;
+    width: 100%;
+    max-width: $max-width;
+  }
+
+  &__nav-list {
+    list-style: none;
+    display: block;
+  }
+
+  &__nav-item {
+    border-bottom: 1px solid rgba($color-white, .1);
+  }
+
+  &__nav-link {
+    &:link,
+    &:visited {
+      display: block;
+      padding: 1rem 0;
+      color: currentColor;
+      transition: all .2s;
+    }
+
+    @include on-event {
+      color: $color-primary;
+    };
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $color-primary;
+      text-decoration: none;
+      line-height: 1;
+      border-bottom: 1px solid transparent;
+      transition: all .2s;
+    }
+
+    @include on-event {
+      border-bottom: 1px solid $color-primary;
+    };
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+
+    background-color: $bg-color-grey;
+    color: $text-color-grey-light-4;
+    padding: 1rem 1rem;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__contact-icon {
+    width: 3rem;
+    height: 3rem;
+    fill: $color-primary;
+    margin-right: 1rem;
+  }
+
+  &__contact-link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $text-color-grey-light-4;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 1rem 0;
+    }
+
+    @include on-event {
+      text-decoration: underline;
+    };
+  }
+
+  &__copyright-bg {
+    display: flex;
+    justify-content: center;
+
+    background-color: $bg-color-black;
+    color: $text-color-grey-dark-1;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 3rem 1rem;
+    width: 100%;
+    max-width: $max-width;
+  }
+
+  &__copyright--link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $text-color-grey-light-4;
+      text-decoration: none;
+      transition: all .2s;
+    }
+
+    @include on-event {
+      color: $color-primary;
+    };
+  }
+}
