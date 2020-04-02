@@ -15,9 +15,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem;
 
-    margin: 5rem 1rem;
+    margin: 5rem 2rem;
     width: 100%;
     max-width: $max-width;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+    }
   }
 
   &__nav-list {
@@ -61,11 +66,16 @@
 
   &__contacts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     background-color: $bg-color-grey;
     color: $text-color-grey-light-4;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
+
+    @media only screen and (max-width: $bp-micro) {
+      flex-direction: column;
+    }
   }
 
   &__contact {
@@ -111,10 +121,21 @@
   &__copyright {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    margin: 3rem 1rem;
+    margin: 3rem 2rem;
     width: 100%;
     max-width: $max-width;
+
+    @media only screen and (max-width: $bp-micro) {
+      flex-direction: column;
+    }
+  }
+
+  &__copyright-text {
+    @media only screen and (max-width: $bp-micro) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__copyright--link {

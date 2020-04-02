@@ -80,6 +80,10 @@
             <img src="{{ asset('img/logotip-yuridicheskoj-kompanii-torgova-i-partnery.svg') }}"
                  alt="Логотип юридической компании Торгова и партнёры"
                  class="header__logo">
+            <input type="checkbox" id="mobile-menu" class="mobile-menu__checkbox">
+            <label for="mobile-menu" class="mobile-menu__button">
+                <span class="mobile-menu__icon"></span>
+            </label>
             <ul class="header__navigation-list">
                 <li class="header__navigation-item">
                     <a href="#" class="header__navigation-link header__navigation-link--active">Главная</a>
@@ -203,24 +207,55 @@
             <a href="#" class="btn">Читать статью</a>
         </div>
         <div class="articles-section">
-            <img src="{{ asset('img/vyigrannye-sudy-sudebnaya-praktika.jpg') }}"
-                 alt="Выигранные суды (судебная практика)" class="articles-section__image">
+            <img
+                class="articles-section__image"
+                sizes="(max-width: 31.25em) 93vw, (max-width: 56.25em) 45vw, (max-width: 62.5em) 21vw, 265px"
+                srcset="
+                    {{ asset('img/vyigrannye-sudy-sudebnaya-praktika_210px.jpg') }} 210w,
+                    {{ asset('img/vyigrannye-sudy-sudebnaya-praktika_265px.jpg') }} 265w,
+                    {{ asset('img/vyigrannye-sudy-sudebnaya-praktika_420px.jpg') }} 420w,
+                    {{ asset('img/vyigrannye-sudy-sudebnaya-praktika_464px.jpg') }} 464w,
+                    {{ asset('img/vyigrannye-sudy-sudebnaya-praktika_530px.jpg') }} 530w,
+                    {{ asset('img/vyigrannye-sudy-sudebnaya-praktika_928px.jpg') }} 928w"
+                src="{{ asset('img/vyigrannye-sudy-sudebnaya-praktika_530px.jpg') }}"
+                alt="Выигранные суды (судебная практика)">
             <a href="#" class="h3 h3--link">Выигранные суды (судебная практика)</a>
             <p class="paragraph">
                 Описание нашей судебной практики и обзор выигранных нами дел.
             </p>
         </div>
         <div class="articles-section">
-            <img src="{{ asset('img/novoe-v-rossijskom-zakonodatelstve.jpg') }}"
-                 alt="Новое в Российском законодательстве" class="articles-section__image">
+            <img
+                class="articles-section__image"
+                sizes="(max-width: 31.25em) 93vw, (max-width: 56.25em) 45vw, (max-width: 62.5em) 21vw, 265px"
+                srcset="
+                    {{ asset('img/novoe-v-rossijskom-zakonodatelstve_210px.jpg') }} 210w,
+                    {{ asset('img/novoe-v-rossijskom-zakonodatelstve_265px.jpg') }} 265w,
+                    {{ asset('img/novoe-v-rossijskom-zakonodatelstve_420px.jpg') }} 420w,
+                    {{ asset('img/novoe-v-rossijskom-zakonodatelstve_464px.jpg') }} 464w,
+                    {{ asset('img/novoe-v-rossijskom-zakonodatelstve_530px.jpg') }} 530w,
+                    {{ asset('img/novoe-v-rossijskom-zakonodatelstve_928px.jpg') }} 928w"
+                src="{{ asset('img/novoe-v-rossijskom-zakonodatelstve_530px.jpg') }}"
+                alt="Новое в Российском законодательстве">
             <a href="#" class="h3 h3--link">Новое в Российском законодательстве</a>
             <p class="paragraph">
                 Обзоры наиболее важных и интересных документов.
             </p>
         </div>
         <div class="articles-section">
-            <img src="{{ asset('img/zadat-vopros-yuristu.jpg') }}" alt="Задать вопрос нашему юристу"
-                 class="articles-section__image">
+            <img
+                class="articles-section__image"
+                sizes="(max-width: 31.25em) 93vw, (max-width: 56.25em) 45vw, (max-width: 62.5em) 21vw, 265px"
+                srcset="
+                    {{ asset('img/zadat-vopros-yuristu_210px.jpg') }} 210w,
+                    {{ asset('img/zadat-vopros-yuristu_265px.jpg') }} 265w,
+                    {{ asset('img/zadat-vopros-yuristu_420px.jpg') }} 420w,
+                    {{ asset('img/zadat-vopros-yuristu_464px.jpg') }} 464w,
+                    {{ asset('img/zadat-vopros-yuristu_530px.jpg') }} 530w,
+                    {{ asset('img/zadat-vopros-yuristu_928px.jpg') }} 928w"
+                src="{{ asset('img/zadat-vopros-yuristu_530px.jpg') }}"
+                alt="Задать вопрос нашему юристу">
+
             <a href="#" class="h3 h3--link">Задать вопрос нашему юристу</a>
             <p class="paragraph">
                 Задавайте нам вопросы онлайн, не стесняйтесь!
@@ -309,7 +344,7 @@
     </div>
     <div class="footer__copyright-bg">
         <div class="footer__copyright">
-            <p>
+            <p class="footer__copyright-text">
                 Copyright ©
                 <a href="{{ config('app.url') }}" class="footer__copyright--link">ЮК "Торгова и партнеры"</a>
                 2015 - 2020 | Дизайн компании
