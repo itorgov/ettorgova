@@ -86,52 +86,52 @@
             </label>
             <ul class="header__navigation-list">
                 <li class="header__navigation-item">
-                    <a href="#" class="header__navigation-link header__navigation-link--active">Главная</a>
+                    <a href="javascript:void(0)" class="header__navigation-link header__navigation-link--active">Главная</a>
                 </li>
                 <li class="header__navigation-item">
-                    <a href="#" class="header__navigation-link">Юридические услуги</a>
+                    <a href="javascript:void(0)" class="header__navigation-link">Юридические услуги</a>
                     <ul class="header__navigation-sublist">
                         <li class="header__navigation-subitem">
-                            <a href="#" class="header__navigation-sublink">Юридическая консультация</a>
+                            <a href="javascript:void(0)" class="header__navigation-sublink">Юридическая консультация</a>
                         </li>
                         <li class="header__navigation-subitem">
-                            <a href="#" class="header__navigation-sublink">Подготовка юридических документов</a>
+                            <a href="javascript:void(0)" class="header__navigation-sublink">Подготовка юридических документов</a>
                         </li>
                         <li class="header__navigation-subitem">
-                            <a href="#" class="header__navigation-sublink">Сопровождение сделок с недвижимостью</a>
-                        </li>
-                        <li class="header__navigation-subitem header__navigation-divider"></li>
-                        <li class="header__navigation-subitem">
-                            <a href="#" class="header__navigation-sublink">Регистрация ИП</a>
-                        </li>
-                        <li class="header__navigation-subitem">
-                            <a href="#" class="header__navigation-sublink">Регистрация ООО</a>
-                        </li>
-                        <li class="header__navigation-subitem">
-                            <a href="#" class="header__navigation-sublink">Юридическое сопровождение бизнеса</a>
+                            <a href="javascript:void(0)" class="header__navigation-sublink">Сопровождение сделок с недвижимостью</a>
                         </li>
                         <li class="header__navigation-subitem header__navigation-divider"></li>
                         <li class="header__navigation-subitem">
-                            <a href="#" class="header__navigation-sublink">Представительство в суде</a>
+                            <a href="javascript:void(0)" class="header__navigation-sublink">Регистрация ИП</a>
                         </li>
                         <li class="header__navigation-subitem">
-                            <a href="#" class="header__navigation-sublink">Представительство в Арбитражных судах</a>
+                            <a href="javascript:void(0)" class="header__navigation-sublink">Регистрация ООО</a>
+                        </li>
+                        <li class="header__navigation-subitem">
+                            <a href="javascript:void(0)" class="header__navigation-sublink">Юридическое сопровождение бизнеса</a>
+                        </li>
+                        <li class="header__navigation-subitem header__navigation-divider"></li>
+                        <li class="header__navigation-subitem">
+                            <a href="javascript:void(0)" class="header__navigation-sublink">Представительство в суде</a>
+                        </li>
+                        <li class="header__navigation-subitem">
+                            <a href="javascript:void(0)" class="header__navigation-sublink">Представительство в Арбитражных судах</a>
                         </li>
                     </ul>
                 </li>
                 <li class="header__navigation-item">
-                    <a href="#" class="header__navigation-link">Акции и скидки</a>
+                    <a href="javascript:void(0)" class="header__navigation-link">Акции и скидки</a>
                 </li>
                 <li class="header__navigation-item">
                     <a href="javascript:void(0)" class="header__navigation-link">Полезная информация</a>
                     <ul class="header__navigation-sublist">
                         <li class="header__navigation-subitem">
-                            <a href="#" class="header__navigation-sublink">Статьи, которые мы пишем</a>
+                            <a href="javascript:void(0)" class="header__navigation-sublink">Статьи, которые мы пишем</a>
                         </li>
                     </ul>
                 </li>
                 <li class="header__navigation-item">
-                    <a href="#" class="header__navigation-link">Контакты</a>
+                    <a href="javascript:void(0)" class="header__navigation-link">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -204,7 +204,7 @@
                 Проконсультировавшись с юристом по семейному праву, можно избежать многих ошибок в непростых ситуациях,
                 которые вредят в дальнейших разбирательствах.
             </p>
-            <a href="#" class="btn">Читать статью</a>
+            <a href="javascript:void(0)" class="btn">Читать статью</a>
         </div>
         <div class="articles-section">
             <img
@@ -219,7 +219,7 @@
                     {{ asset('img/vyigrannye-sudy-sudebnaya-praktika_928px.jpg') }} 928w"
                 src="{{ asset('img/vyigrannye-sudy-sudebnaya-praktika_530px.jpg') }}"
                 alt="Выигранные суды (судебная практика)">
-            <a href="#" class="h3 h3--link">Выигранные суды (судебная практика)</a>
+            <a href="javascript:void(0)" class="h3 h3--link">Выигранные суды (судебная практика)</a>
             <p class="paragraph">
                 Описание нашей судебной практики и обзор выигранных нами дел.
             </p>
@@ -237,7 +237,7 @@
                     {{ asset('img/novoe-v-rossijskom-zakonodatelstve_928px.jpg') }} 928w"
                 src="{{ asset('img/novoe-v-rossijskom-zakonodatelstve_530px.jpg') }}"
                 alt="Новое в Российском законодательстве">
-            <a href="#" class="h3 h3--link">Новое в Российском законодательстве</a>
+            <a href="javascript:void(0)" class="h3 h3--link">Новое в Российском законодательстве</a>
             <p class="paragraph">
                 Обзоры наиболее важных и интересных документов.
             </p>
@@ -256,7 +256,7 @@
                 src="{{ asset('img/zadat-vopros-yuristu_530px.jpg') }}"
                 alt="Задать вопрос нашему юристу">
 
-            <a href="#" class="h3 h3--link">Задать вопрос нашему юристу</a>
+            <a href="javascript:void(0)" class="h3 h3--link">Задать вопрос нашему юристу</a>
             <p class="paragraph">
                 Задавайте нам вопросы онлайн, не стесняйтесь!
             </p>
@@ -270,19 +270,19 @@
                 <h3 class="h3 h3--light">Разделы сайта</h3>
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link">Главная</a>
+                        <a href="javascript:void(0)" class="footer__nav-link">Главная</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link">Юридические услуги</a>
+                        <a href="javascript:void(0)" class="footer__nav-link">Юридические услуги</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link">Акции и скидки</a>
+                        <a href="javascript:void(0)" class="footer__nav-link">Акции и скидки</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link">Статьи, которые мы пишем</a>
+                        <a href="javascript:void(0)" class="footer__nav-link">Статьи, которые мы пишем</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link">Контакты</a>
+                        <a href="javascript:void(0)" class="footer__nav-link">Контакты</a>
                     </li>
                 </ul>
             </div>
