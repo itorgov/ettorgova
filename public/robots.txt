@@ -1,18 +1,2 @@
-User-agent: Yandex
-Disallow: /admin
-Disallow: /cdn-cgi
-
-User-agent: Googlebot
-Disallow: /admin
-Disallow: /cdn-cgi
-
-User-agent: Mail.Ru
-Disallow: /admin
-Disallow: /cdn-cgi
-
 User-agent: *
-Disallow: /admin
-Disallow: /cdn-cgi
-
-Host: https://ettorgova.ru
-Sitemap: https://ettorgova.ru/sitemap.xml
+Disallow:

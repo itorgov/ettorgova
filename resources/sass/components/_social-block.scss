@@ -1,0 +1,60 @@
+.social-block {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    &:link,
+    &:visited {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: $color-white;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 2px;
+      opacity: .8;
+      transition: opacity .2s;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    @include on-event {
+      opacity: 1;
+    }
+
+    &:not(:last-child) {
+      margin-right: .5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-right: 1.5rem;
+      }
+    }
+
+    &--vk {
+      background-color: $color-vk;
+    }
+
+    &--facebook {
+      background-color: $color-facebook;
+    }
+
+    &--twitter {
+      background-color: $color-twitter;
+    }
+
+    svg {
+      fill: currentColor;
+      width: 1.5rem;
+      height: 1.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}

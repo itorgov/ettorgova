@@ -1,0 +1,37 @@
+.section-features,
+.section-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 4rem;
+
+  padding: 6rem 0 4rem 0;
+  width: 100%;
+  max-width: $max-width;
+
+  @media only screen and (max-width: $bp-big) {
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  }
+}
+
+.feature {
+  text-align: center;
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+    fill: $color-primary;
+  }
+}
+
+.articles-section {
+  &__image {
+    width: 100%;
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+}

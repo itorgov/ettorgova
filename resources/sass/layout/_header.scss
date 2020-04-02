@@ -1,0 +1,371 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &__contacts-bg {
+    display: flex;
+    justify-content: center;
+
+    background-color: $bg-color-grey-light;
+    color: $text-color-grey-light-4;
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0 2rem;
+    width: 100%;
+    max-width: $max-width;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    margin: .8rem 0;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__contact-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: $color-primary;
+    margin-right: 0.5rem;
+  }
+
+  &__contact-link {
+    &:link,
+    &:visited {
+      color: $text-color-grey-light-4;
+      font-size: 1.3rem;
+      text-decoration: none;
+    }
+
+    @include on-event {
+      color: currentColor;
+      text-decoration: underline;
+    }
+  }
+
+  &__social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: .8rem 0;
+  }
+
+  &__navigation-bg {
+    display: flex;
+    justify-content: center;
+
+    background-color: $color-white;
+    color: $text-color-grey;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2rem;
+    width: 100%;
+    max-width: $max-width;
+    position: relative;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 80%;
+      margin-top: 3rem;
+    }
+  }
+
+  &__logo {
+    width: 28.5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      max-width: 28.5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  &__navigation-list {
+    display: flex;
+    list-style: none;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      width: 100%;
+
+      opacity: 0;
+      height: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: all .2s;
+      backface-visibility: hidden;
+    }
+  }
+
+  &__navigation-item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      border-top: 1px solid rgba($color-black, .1);
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__navigation-link {
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      display: block;
+      padding: 2rem 0;
+      font-size: 1.4rem;
+      color: currentColor;
+      transition: all .2s;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+        padding: 1.5rem 0;
+      }
+    }
+
+    &--active:link,
+    &--active:visited {
+      color: $color-primary;
+    }
+
+    @include on-event {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+
+  &__navigation-link:hover + &__navigation-sublist,
+  &__navigation-sublist:hover {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__navigation-sublist {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: $color-white;
+    list-style: none;
+    width: 26rem;
+    border-radius: 2px;
+    box-shadow: 0 2rem 3rem rgba($color-black, .25);
+    transform: translateY(-1rem);
+    transition: all .5s;
+
+    @media only screen and (max-width: $bp-small) {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+      box-shadow: none;
+      border-radius: 0;
+      background-color: inherit;
+      transform: translateY(0);
+      width: 100%
+    }
+  }
+
+  &__navigation-subitem {
+    &:first-child {
+      border-top: 3px solid $color-primary;
+
+      @media only screen and (max-width: $bp-small) {
+        border-top: 2px solid rgba($color-black, .1);
+      }
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($color-black, .1);
+      }
+    }
+  }
+
+  &__navigation-divider {
+    height: 1px;
+    background-color: rgba($color-black, .1);
+  }
+
+  &__navigation-sublink {
+    &:link,
+    &:visited {
+      display: block;
+      padding: .6rem 1rem;
+      font-size: 1.3rem;
+      color: $text-color-grey;
+      transition: all .2s;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.4rem;
+        padding: 1.5rem 0 1.5rem 1.5rem;
+      }
+    }
+
+    @include on-event {
+      text-decoration: none;
+      background-color: $text-color-grey-light-1;
+      color: $color-primary;
+    }
+  }
+
+  &__quote-bg {
+    display: flex;
+    justify-content: center;
+
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &__quote {
+    display: flex;
+    justify-content: center;
+
+    width: 85%;
+    max-width: $max-width;
+    margin: 2rem;
+  }
+
+  &__quote-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 3.7rem;
+  }
+
+  &__quote-author {
+    align-self: flex-end;
+
+    font-size: 1.7rem;
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+
+  &__hero-bg {
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 1px solid rgba($color-black, .1);
+  }
+
+  &__hero {
+    height: 35vw;
+    max-height: 50rem;
+    width: 100%;
+    max-width: 144rem;
+    background-image: url("/img/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page-1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (min-resolution: 192dpi), only screen and (-webkit-min-device-pixel-ratio: 2) {
+      background-image: url("/img/yuridicheskaya-kompaniya-torgova-i-partnyory-home-page-2x.jpg");
+    }
+  }
+}
+
+.mobile-menu {
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+  }
+
+  &__checkbox:checked ~ .header__navigation-list {
+    opacity: 1;
+    height: 100%;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  &__button {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem 0 2rem 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    margin-top: .5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $bg-color-grey-light;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+
+    &::before {
+      top: -.8rem;
+    }
+
+    &::after {
+      top: .8rem;
+    }
+  }
+}
