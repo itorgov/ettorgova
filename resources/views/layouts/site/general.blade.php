@@ -51,7 +51,7 @@
                         </ul>
                     </div>
                     <div class="social-profiles clearfix">
-                        <ul>
+                        <!--<ul>
                             <li class="vk">
                                 <a href="https://vk.com/ettorgova"
                                    title="ЮК Торгова и партнёры в Вконтакте"
@@ -73,7 +73,7 @@
                                    target="_blank">
                                 </a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>
@@ -290,7 +290,7 @@
             <div id="site-generator">
                 <div class="container clearfix">
                     <div class="social-profiles clearfix">
-                        <ul>
+                        <!--<ul>
                             <li class="vk">
                                 <a href="https://vk.com/ettorgova"
                                    title="ЮК Торгова и партнёры в Вконтакте"
@@ -312,7 +312,7 @@
                                    target="_blank">
                                 </a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                     <div class="copyright">
                         Copyright &copy;
